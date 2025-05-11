@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -9,9 +10,17 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { format } from "date-fns";
 import { Calendar as CalendarIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import emailjs from "emailjs-com";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 
 // Destination email for form submissions
 const NOTIFICATION_EMAIL = "nakulbagree@gmail.com";
+
+// EmailJS service configuration
+// Replace these with your actual EmailJS credentials from emailjs.com
+const EMAILJS_SERVICE_ID = "YOUR_EMAILJS_SERVICE_ID";
+const EMAILJS_TEMPLATE_ID = "YOUR_EMAILJS_TEMPLATE_ID";
+const EMAILJS_USER_ID = "YOUR_EMAILJS_PUBLIC_KEY";
 
 const BookingForm = ({ propertyId = null }: { propertyId?: number | null }) => {
   const { toast } = useToast();
@@ -21,33 +30,67 @@ const BookingForm = ({ propertyId = null }: { propertyId?: number | null }) => {
   const [date, setDate] = useState<Date | undefined>(undefined);
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [emailError, setEmailError] = useState<string | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setEmailError(null);
     
-    console.log(`Booking request will be sent to: ${NOTIFICATION_EMAIL}`);
-    console.log("Form data:", { name, email, phone, date: date?.toISOString(), message, propertyId });
-    
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Booking Request Received",
-        description: `We'll contact you shortly to confirm your appointment. A notification has been sent to our team.`,
-      });
-      
-      // Reset the form
-      setName("");
-      setEmail("");
-      setPhone("");
-      setDate(undefined);
-      setMessage("");
+    // Check if EmailJS credentials are set
+    if (EMAILJS_SERVICE_ID === "YOUR_EMAILJS_SERVICE_ID" || 
+        EMAILJS_TEMPLATE_ID === "YOUR_EMAILJS_TEMPLATE_ID" || 
+        EMAILJS_USER_ID === "YOUR_EMAILJS_PUBLIC_KEY") {
+      setEmailError("Email service not configured. Please set up EmailJS credentials.");
       setIsSubmitting(false);
-    }, 1500);
+      return;
+    }
+    
+    // Prepare template parameters
+    const templateParams = {
+      to_email: NOTIFICATION_EMAIL,
+      from_name: name,
+      from_email: email,
+      phone: phone,
+      visit_date: date ? format(date, "PPP") : "No date selected",
+      message: message,
+      property_id: propertyId || "No specific property",
+    };
+    
+    console.log("Sending email with data:", templateParams);
+    
+    // Send the email using EmailJS
+    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_USER_ID)
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+        toast({
+          title: "Booking Request Received",
+          description: `We'll contact you shortly to confirm your appointment. A notification has been sent to our team.`,
+        });
+        
+        // Reset the form
+        setName("");
+        setEmail("");
+        setPhone("");
+        setDate(undefined);
+        setMessage("");
+        setIsSubmitting(false);
+      })
+      .catch((error) => {
+        console.error("Email sending failed:", error);
+        setEmailError("Failed to send your booking request. Please try again later or contact us directly.");
+        setIsSubmitting(false);
+      });
   };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {emailError && (
+        <Alert variant="destructive">
+          <AlertDescription>{emailError}</AlertDescription>
+        </Alert>
+      )}
+      
       <div className="space-y-2">
         <Label htmlFor="name">Full Name</Label>
         <Input
