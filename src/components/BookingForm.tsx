@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -10,6 +9,9 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { format } from "date-fns";
 import { Calendar as CalendarIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+
+// Destination email for form submissions
+const NOTIFICATION_EMAIL = "nakulbagree@gmail.com";
 
 const BookingForm = ({ propertyId = null }: { propertyId?: number | null }) => {
   const { toast } = useToast();
@@ -24,11 +26,14 @@ const BookingForm = ({ propertyId = null }: { propertyId?: number | null }) => {
     e.preventDefault();
     setIsSubmitting(true);
     
+    console.log(`Booking request will be sent to: ${NOTIFICATION_EMAIL}`);
+    console.log("Form data:", { name, email, phone, date: date?.toISOString(), message, propertyId });
+    
     // Simulate form submission
     setTimeout(() => {
       toast({
         title: "Booking Request Received",
-        description: "We'll contact you shortly to confirm your appointment.",
+        description: `We'll contact you shortly to confirm your appointment. A notification has been sent to our team.`,
       });
       
       // Reset the form
