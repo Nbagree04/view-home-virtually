@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -8,63 +7,52 @@ import PropertyCard from "@/components/PropertyCard";
 import { Camera, Calendar, MapPin } from "lucide-react";
 
 // Sample properties data
-const featuredProperties = [
-  {
-    id: 1,
-    title: "Modern Downtown Apartment",
-    price: 425000,
-    location: "San Francisco, CA",
-    bedrooms: 2,
-    bathrooms: 2,
-    sqft: 1200,
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    hasVirtualTour: true
-  },
-  {
-    id: 2,
-    title: "Luxury Beachfront Villa",
-    price: 1250000,
-    location: "Malibu, CA",
-    bedrooms: 4,
-    bathrooms: 3,
-    sqft: 3200,
-    imageUrl: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    hasVirtualTour: true
-  },
-  {
-    id: 3,
-    title: "Cozy Mountain Retreat",
-    price: 750000,
-    location: "Aspen, CO",
-    bedrooms: 3,
-    bathrooms: 2,
-    sqft: 2100,
-    imageUrl: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    hasVirtualTour: true
-  },
-];
-
-const testimonials = [
-  {
-    name: "Sarah J.",
-    text: "The virtual tour saved me so much time! I was able to narrow down my choices before even visiting in person.",
-    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
-  },
-  {
-    name: "Michael T.",
-    text: "Being able to virtually walk through properties from my own home was a game-changer in our house hunting process.",
-    imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
-  },
-  {
-    name: "Emma R.",
-    text: "VR Estates made finding our dream home an immersive experience. Their team was professional and attentive throughout.",
-    imageUrl: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
-  }
-];
-
+const featuredProperties = [{
+  id: 1,
+  title: "Modern Downtown Apartment",
+  price: 425000,
+  location: "San Francisco, CA",
+  bedrooms: 2,
+  bathrooms: 2,
+  sqft: 1200,
+  imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  hasVirtualTour: true
+}, {
+  id: 2,
+  title: "Luxury Beachfront Villa",
+  price: 1250000,
+  location: "Malibu, CA",
+  bedrooms: 4,
+  bathrooms: 3,
+  sqft: 3200,
+  imageUrl: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  hasVirtualTour: true
+}, {
+  id: 3,
+  title: "Cozy Mountain Retreat",
+  price: 750000,
+  location: "Aspen, CO",
+  bedrooms: 3,
+  bathrooms: 2,
+  sqft: 2100,
+  imageUrl: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  hasVirtualTour: true
+}];
+const testimonials = [{
+  name: "Sarah J.",
+  text: "The virtual tour saved me so much time! I was able to narrow down my choices before even visiting in person.",
+  imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
+}, {
+  name: "Michael T.",
+  text: "Being able to virtually walk through properties from my own home was a game-changer in our house hunting process.",
+  imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
+}, {
+  name: "Emma R.",
+  text: "VR Estates made finding our dream home an immersive experience. Their team was professional and attentive throughout.",
+  imageUrl: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
+}];
 const Index = () => {
-  return (
-    <div className="flex flex-col min-h-screen">
+  return <div className="flex flex-col min-h-screen">
       <Navbar />
       
       {/* Hero Section */}
@@ -100,11 +88,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
-              <img 
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                alt="VR Experience" 
-                className="rounded-lg shadow-lg"
-              />
+              <img alt="VR Experience" className="rounded-lg shadow-lg" src="/lovable-uploads/2a694fd7-7dac-44ac-a7c3-79aeb4171ee1.jpg" />
             </div>
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold text-realestate-blue mb-4">
@@ -154,9 +138,7 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredProperties.map((property) => (
-              <PropertyCard key={property.id} {...property} />
-            ))}
+            {featuredProperties.map(property => <PropertyCard key={property.id} {...property} />)}
           </div>
           
           <div className="mt-10 text-center">
@@ -224,19 +206,13 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+            {testimonials.map((testimonial, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-md">
                 <div className="flex items-center mb-4">
-                  <img 
-                    src={testimonial.imageUrl} 
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full mr-4 object-cover" 
-                  />
+                  <img src={testimonial.imageUrl} alt={testimonial.name} className="w-12 h-12 rounded-full mr-4 object-cover" />
                   <h3 className="font-bold">{testimonial.name}</h3>
                 </div>
                 <p className="text-realestate-gray italic">"{testimonial.text}"</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -264,8 +240,6 @@ const Index = () => {
       </section>
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
