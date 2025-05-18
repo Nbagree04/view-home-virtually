@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -17,10 +16,9 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 const NOTIFICATION_EMAIL = "nakulbagree@gmail.com";
 
 // EmailJS service configuration
-// Replace these with your actual EmailJS credentials from emailjs.com
-const EMAILJS_SERVICE_ID = "service_ejfs6ol   ";
+const EMAILJS_SERVICE_ID = "service_ejfs6ol";
 const EMAILJS_TEMPLATE_ID = "template_qf76wz9";
-const EMAILJS_USER_ID = "uUE7PH360uc4t3kXd    ";
+const EMAILJS_USER_ID = "uUE7PH360uc4t3kXd";
 
 const BookingForm = ({ propertyId = null }: { propertyId?: number | null }) => {
   const { toast } = useToast();
@@ -38,9 +36,7 @@ const BookingForm = ({ propertyId = null }: { propertyId?: number | null }) => {
     setEmailError(null);
     
     // Check if EmailJS credentials are set
-    if (EMAILJS_SERVICE_ID === "service_ejfs6ol" || 
-        EMAILJS_TEMPLATE_ID === "template_qf76wz9" || 
-        EMAILJS_USER_ID === "uUE7PH360uc4t3kXd") {
+    if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_USER_ID) {
       setEmailError("Email service not configured. Please set up EmailJS credentials.");
       setIsSubmitting(false);
       return;
