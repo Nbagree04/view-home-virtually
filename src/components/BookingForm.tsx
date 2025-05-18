@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -43,27 +42,23 @@ const BookingForm = ({ propertyId = null }: { propertyId?: number | null }) => {
       return;
     }
     
-    // Prepare template parameters with customized field names
-    // These parameter names should match variables in your EmailJS template
+    // Prepare template parameters to match the EmailJS template fields
     const templateParams = {
-      // Recipient information
+      // Email configuration
       to_email: NOTIFICATION_EMAIL,
+      title: `Property Visit Request ${propertyId ? `(Property #${propertyId})` : ''}`,
       
-      // Client information
-      client_name: name,
-      client_email: email,
-      client_phone: phone,
+      // Sender information matching template variables
+      name: name,
+      email: email,
+      time: new Date().toLocaleString(),
+      message: `${date ? `Requested visit date: ${format(date, "PPP")}\n\n` : ''}${message}`,
       
-      // Booking details
-      appointment_date: date ? format(date, "PPP") : "No date selected",
-      appointment_details: message,
-      
-      // Property information
+      // Additional fields
+      phone: phone,
       property_reference: propertyId || "No specific property",
-      
-      // Additional information you might want in your template
-      submission_time: new Date().toLocaleString(),
-      form_source: "Website Booking Form",
+      form_source: "Property Booking Form",
+      reply_to: email,
     };
     
     console.log("Sending email with data:", templateParams);

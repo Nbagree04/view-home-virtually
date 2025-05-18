@@ -5,6 +5,16 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "emailjs-com";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+
+// EmailJS service configuration - same as in BookingForm
+const EMAILJS_SERVICE_ID = "service_ejfs6ol";
+const EMAILJS_TEMPLATE_ID = "template_qf76wz9";
+const EMAILJS_USER_ID = "uUE7PH360uc4t3kXd";
+
+// Destination email for form submissions
+const NOTIFICATION_EMAIL = "nakulbagree@gmail.com";
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -14,30 +24,72 @@ const ContactForm = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [emailError, setEmailError] = useState<string | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setEmailError(null);
     
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message Sent",
-        description: "Thank you for reaching out. We'll get back to you soon.",
-      });
-      
-      // Reset the form
-      setName("");
-      setEmail("");
-      setPhone("");
-      setSubject("");
-      setMessage("");
+    // Check if EmailJS credentials are set
+    if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_USER_ID) {
+      setEmailError("Email service not configured. Please set up EmailJS credentials.");
       setIsSubmitting(false);
-    }, 1500);
+      return;
+    }
+    
+    // Prepare template parameters to match the EmailJS template
+    const templateParams = {
+      // Email configuration
+      to_email: NOTIFICATION_EMAIL,
+      title: subject || "Contact Form Submission",
+      
+      // Sender information matching template variables
+      name: name,
+      email: email,
+      time: new Date().toLocaleString(),
+      message: message,
+      
+      // Additional fields that might be in the template
+      reply_to: email,
+      phone: phone,
+      form_source: "Website Contact Form",
+    };
+    
+    console.log("Sending contact form data:", templateParams);
+    
+    // Send the email using EmailJS
+    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_USER_ID)
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+        toast({
+          title: "Message Sent",
+          description: "Thank you for reaching out. We'll get back to you soon.",
+        });
+        
+        // Reset the form
+        setName("");
+        setEmail("");
+        setPhone("");
+        setSubject("");
+        setMessage("");
+        setIsSubmitting(false);
+      })
+      .catch((error) => {
+        console.error("Failed to send email:", error);
+        setEmailError("Failed to send your message. Please try again later or contact us directly.");
+        setIsSubmitting(false);
+      });
   };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {emailError && (
+        <Alert variant="destructive">
+          <AlertDescription>{emailError}</AlertDescription>
+        </Alert>
+      )}
+      
       <div className="space-y-2">
         <Label htmlFor="name">Full Name</Label>
         <Input
