@@ -56,7 +56,7 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="hero-bg h-[600px] relative flex items-center">
+      <section className="hero-bg h-[600px] relative flex items-center rounded-none bg-zinc-50">
         <div className="container mx-auto px-4 z-10">
           <div className="max-w-lg">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
