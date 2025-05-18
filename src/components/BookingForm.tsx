@@ -18,9 +18,9 @@ const NOTIFICATION_EMAIL = "nakulbagree@gmail.com";
 
 // EmailJS service configuration
 // Replace these with your actual EmailJS credentials from emailjs.com
-const EMAILJS_SERVICE_ID = "service_ejfs6ol";
-const EMAILJS_TEMPLATE_ID = "template_qf76wz9";
-const EMAILJS_USER_ID = "uUE7PH360uc4t3kXd";
+const EMAILJS_SERVICE_ID = "YOUR_EMAILJS_SERVICE_ID";
+const EMAILJS_TEMPLATE_ID = "YOUR_EMAILJS_TEMPLATE_ID";
+const EMAILJS_USER_ID = "YOUR_EMAILJS_PUBLIC_KEY";
 
 const BookingForm = ({ propertyId = null }: { propertyId?: number | null }) => {
   const { toast } = useToast();
