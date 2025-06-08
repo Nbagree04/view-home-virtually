@@ -2,13 +2,20 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Home, Menu, X } from "lucide-react";
+import { Home, Menu, X, User, LogOut, Shield } from "lucide-react";
+import { useAuth } from "@/contexts/AuthContext";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { user, isAdmin, signOut } = useAuth();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleSignOut = async () => {
+    await signOut();
+    setIsMenuOpen(false);
   };
 
   return (
@@ -33,11 +40,41 @@ const Navbar = () => {
           <Link to="/contact" className="text-realestate-gray hover:text-realestate-blue transition-colors">
             Contact
           </Link>
-          <Link to="/book-visit">
-            <Button className="bg-realestate-teal hover:bg-realestate-blue text-white">
-              Book a Visit
-            </Button>
-          </Link>
+          
+          {user ? (
+            <div className="flex items-center space-x-4">
+              {isAdmin && (
+                <Link to="/admin">
+                  <Button variant="outline" className="text-realestate-teal border-realestate-teal hover:bg-realestate-teal hover:text-white">
+                    <Shield className="h-4 w-4 mr-2" />
+                    Admin
+                  </Button>
+                </Link>
+              )}
+              <Button
+                onClick={handleSignOut}
+                variant="outline"
+                className="text-realestate-gray hover:text-realestate-blue"
+              >
+                <LogOut className="h-4 w-4 mr-2" />
+                Sign Out
+              </Button>
+            </div>
+          ) : (
+            <div className="flex items-center space-x-4">
+              <Link to="/auth">
+                <Button variant="outline" className="text-realestate-gray hover:text-realestate-blue">
+                  <User className="h-4 w-4 mr-2" />
+                  Sign In
+                </Button>
+              </Link>
+              <Link to="/book-visit">
+                <Button className="bg-realestate-teal hover:bg-realestate-blue text-white">
+                  Book a Visit
+                </Button>
+              </Link>
+            </div>
+          )}
         </div>
 
         {/* Mobile Navigation Toggle */}
@@ -81,11 +118,41 @@ const Navbar = () => {
           >
             Contact
           </Link>
-          <Link to="/book-visit" onClick={toggleMenu}>
-            <Button className="w-full bg-realestate-teal hover:bg-realestate-blue text-white">
-              Book a Visit
-            </Button>
-          </Link>
+          
+          {user ? (
+            <div className="space-y-4">
+              {isAdmin && (
+                <Link to="/admin" onClick={toggleMenu}>
+                  <Button className="w-full bg-realestate-teal hover:bg-realestate-blue text-white">
+                    <Shield className="h-4 w-4 mr-2" />
+                    Admin Dashboard
+                  </Button>
+                </Link>
+              )}
+              <Button
+                onClick={handleSignOut}
+                className="w-full"
+                variant="outline"
+              >
+                <LogOut className="h-4 w-4 mr-2" />
+                Sign Out
+              </Button>
+            </div>
+          ) : (
+            <div className="space-y-4">
+              <Link to="/auth" onClick={toggleMenu}>
+                <Button className="w-full" variant="outline">
+                  <User className="h-4 w-4 mr-2" />
+                  Sign In
+                </Button>
+              </Link>
+              <Link to="/book-visit" onClick={toggleMenu}>
+                <Button className="w-full bg-realestate-teal hover:bg-realestate-blue text-white">
+                  Book a Visit
+                </Button>
+              </Link>
+            </div>
+          )}
         </div>
       )}
     </nav>
