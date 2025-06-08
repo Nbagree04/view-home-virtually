@@ -11,7 +11,8 @@ import { useToast } from '@/hooks/use-toast';
 import { supabase } from '@/integrations/supabase/client';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Trash2, Edit } from 'lucide-react';
+import FileUpload from '@/components/FileUpload';
+import { Trash2, Edit, X } from 'lucide-react';
 
 interface Property {
   id: string;
@@ -34,6 +35,7 @@ const Admin = () => {
   
   const [properties, setProperties] = useState<Property[]>([]);
   const [editingProperty, setEditingProperty] = useState<Property | null>(null);
+  const [uploadedImages, setUploadedImages] = useState<string[]>([]);
   const [formData, setFormData] = useState({
     title: '',
     price: '',
@@ -73,6 +75,21 @@ const Admin = () => {
       });
     } else {
       setProperties(data || []);
+    }
+  };
+
+  const handleFileUploaded = (url: string) => {
+    setUploadedImages(prev => [...prev, url]);
+    if (!formData.image_url) {
+      setFormData(prev => ({ ...prev, image_url: url }));
+    }
+  };
+
+  const removeUploadedImage = (urlToRemove: string) => {
+    setUploadedImages(prev => prev.filter(url => url !== urlToRemove));
+    if (formData.image_url === urlToRemove) {
+      const nextImage = uploadedImages.find(url => url !== urlToRemove);
+      setFormData(prev => ({ ...prev, image_url: nextImage || '' }));
     }
   };
 
@@ -137,6 +154,7 @@ const Admin = () => {
       description: property.description || '',
       has_virtual_tour: property.has_virtual_tour || false,
     });
+    setUploadedImages(property.image_url ? [property.image_url] : []);
   };
 
   const handleDelete = async (id: string) => {
@@ -164,6 +182,7 @@ const Admin = () => {
 
   const resetForm = () => {
     setEditingProperty(null);
+    setUploadedImages([]);
     setFormData({
       title: '',
       price: '',
@@ -203,7 +222,7 @@ const Admin = () => {
                   {editingProperty ? 'Update property details' : 'Fill in the details to add a new property'}
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-6">
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="title">Title</Label>
@@ -280,15 +299,41 @@ const Admin = () => {
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="image_url">Image URL</Label>
-                    <Input
-                      id="image_url"
-                      type="url"
-                      value={formData.image_url}
-                      onChange={(e) => setFormData({...formData, image_url: e.target.value})}
-                    />
-                  </div>
+                  <FileUpload
+                    onFileUploaded={handleFileUploaded}
+                    acceptedTypes="image/*,video/*"
+                    maxFileSize={10}
+                    multiple={true}
+                  />
+
+                  {uploadedImages.length > 0 && (
+                    <div className="space-y-2">
+                      <Label>Uploaded Media</Label>
+                      <div className="grid grid-cols-2 gap-2">
+                        {uploadedImages.map((url, index) => (
+                          <div key={index} className="relative group">
+                            <img
+                              src={url}
+                              alt={`Upload ${index + 1}`}
+                              className="w-full h-20 object-cover rounded border"
+                            />
+                            <button
+                              type="button"
+                              onClick={() => removeUploadedImage(url)}
+                              className="absolute top-1 right-1 bg-red-500 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity"
+                            >
+                              <X className="h-3 w-3" />
+                            </button>
+                            {formData.image_url === url && (
+                              <div className="absolute bottom-1 left-1 bg-green-500 text-white text-xs px-1 rounded">
+                                Primary
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
 
                   <div className="space-y-2">
                     <Label htmlFor="description">Description</Label>
@@ -334,10 +379,19 @@ const Admin = () => {
                 <div className="space-y-4 max-h-96 overflow-y-auto">
                   {properties.map((property) => (
                     <div key={property.id} className="border rounded-lg p-4 flex justify-between items-start">
-                      <div>
-                        <h3 className="font-semibold">{property.title}</h3>
-                        <p className="text-sm text-gray-600">{property.location}</p>
-                        <p className="text-sm font-medium">${property.price.toLocaleString()}</p>
+                      <div className="flex space-x-4">
+                        {property.image_url && (
+                          <img
+                            src={property.image_url}
+                            alt={property.title}
+                            className="w-16 h-16 object-cover rounded"
+                          />
+                        )}
+                        <div>
+                          <h3 className="font-semibold">{property.title}</h3>
+                          <p className="text-sm text-gray-600">{property.location}</p>
+                          <p className="text-sm font-medium">${property.price.toLocaleString()}</p>
+                        </div>
                       </div>
                       <div className="flex gap-2">
                         <Button
