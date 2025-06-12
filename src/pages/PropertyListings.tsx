@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -18,7 +19,7 @@ const properties = [
     bedrooms: 2,
     bathrooms: 2,
     sqft: 1200,
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "Apartment"
   },
@@ -30,7 +31,7 @@ const properties = [
     bedrooms: 4,
     bathrooms: 3,
     sqft: 3200,
-    imageUrl: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "House"
   },
@@ -42,7 +43,7 @@ const properties = [
     bedrooms: 3,
     bathrooms: 2,
     sqft: 2100,
-    imageUrl: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "Apartment"
   },
@@ -54,7 +55,7 @@ const properties = [
     bedrooms: 2,
     bathrooms: 2,
     sqft: 1850,
-    imageUrl: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "Apartment"
   },
@@ -66,7 +67,7 @@ const properties = [
     bedrooms: 4,
     bathrooms: 3,
     sqft: 3200,
-    imageUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "House"
   },
@@ -78,7 +79,7 @@ const properties = [
     bedrooms: 1,
     bathrooms: 1,
     sqft: 850,
-    imageUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: false,
     type: "Studio"
   },
@@ -90,7 +91,7 @@ const properties = [
     bedrooms: 3,
     bathrooms: 3,
     sqft: 2800,
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "Apartment"
   },
@@ -102,7 +103,7 @@ const properties = [
     bedrooms: 2,
     bathrooms: 2,
     sqft: 1400,
-    imageUrl: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "Apartment"
   },
