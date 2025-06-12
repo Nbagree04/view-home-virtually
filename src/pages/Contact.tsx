@@ -33,8 +33,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-bold text-realestate-blue mb-1">Office Address</h3>
                       <p className="text-realestate-gray">
-                        123 Real Estate Blvd,<br />
-                        San Francisco, CA 94105
+                        Skye Luxuria, Nipania,<br />
+                        Indore, Madhya Pradesh
                       </p>
                     </div>
                   </div>
@@ -47,11 +47,11 @@ const Contact = () => {
                     <Phone className="h-5 w-5 text-realestate-teal mr-3 mt-1" />
                     <div>
                       <h3 className="font-bold text-realestate-blue mb-1">Phone</h3>
-                      <p className="text-realestate-gray mb-1">(555) 123-4567</p>
+                      <p className="text-realestate-gray mb-1">+91 98267 41260</p>
                       <p className="text-sm text-realestate-gray/70">
                         For general inquiries
                       </p>
-                      <p className="text-realestate-gray mb-1 mt-2">(555) 987-6543</p>
+                      <p className="text-realestate-gray mb-1 mt-2">+91 98260 30260</p>
                       <p className="text-sm text-realestate-gray/70">
                         For VR tour scheduling
                       </p>
@@ -117,7 +117,7 @@ const Contact = () => {
                     <div className="text-center">
                       <MapPin className="h-6 w-6 text-realestate-teal mx-auto mb-2" />
                       <p className="text-realestate-gray">
-                        123 Real Estate Blvd, San Francisco, CA 94105
+                        Skye Luxuria, Nipania, Indore, Madhya Pradesh
                       </p>
                       <p className="text-sm text-realestate-gray/70 mt-1">
                         Map view would be displayed here
