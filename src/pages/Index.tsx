@@ -6,12 +6,12 @@ import Footer from "@/components/Footer";
 import PropertyCard from "@/components/PropertyCard";
 import { Camera, Calendar, MapPin } from "lucide-react";
 
-// Sample properties data
+// Sample properties data with Indian locations and INR currency
 const featuredProperties = [{
   id: 1,
   title: "Modern Downtown Apartment",
-  price: 425000,
-  location: "San Francisco, CA",
+  price: 8500000,
+  location: "Bandra West, Mumbai",
   bedrooms: 2,
   bathrooms: 2,
   sqft: 1200,
@@ -20,8 +20,8 @@ const featuredProperties = [{
 }, {
   id: 2,
   title: "Luxury Beachfront Villa",
-  price: 1250000,
-  location: "Malibu, CA",
+  price: 25000000,
+  location: "Juhu Beach, Mumbai",
   bedrooms: 4,
   bathrooms: 3,
   sqft: 3200,
@@ -29,9 +29,9 @@ const featuredProperties = [{
   hasVirtualTour: true
 }, {
   id: 3,
-  title: "Cozy Mountain Retreat",
-  price: 750000,
-  location: "Aspen, CO",
+  title: "Cozy Hill Station Retreat",
+  price: 12000000,
+  location: "Kotagiri, Tamil Nadu",
   bedrooms: 3,
   bathrooms: 2,
   sqft: 2100,
