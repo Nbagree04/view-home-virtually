@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { MapPin } from "lucide-react";
+import { formatIndianCurrency, formatIndianNumber } from "@/utils/indiaData";
 
 export interface PropertyProps {
   id: number;
@@ -46,7 +47,7 @@ const PropertyCard = ({
         <div className="p-4">
           <div className="flex justify-between items-start mb-2">
             <h3 className="text-lg font-bold text-gray-800 line-clamp-1">{title}</h3>
-            <span className="text-realestate-teal font-bold">${price.toLocaleString()}</span>
+            <span className="text-realestate-teal font-bold">{formatIndianCurrency(price)}</span>
           </div>
           
           <div className="flex items-center text-realestate-gray mb-3">
@@ -57,7 +58,7 @@ const PropertyCard = ({
           <div className="flex justify-between text-sm text-realestate-gray">
             <span>{bedrooms} Beds</span>
             <span>{bathrooms} Baths</span>
-            <span>{sqft.toLocaleString()} Sq Ft</span>
+            <span>{formatIndianNumber(sqft)} Sq Ft</span>
           </div>
         </div>
       </div>

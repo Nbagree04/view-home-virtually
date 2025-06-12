@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -6,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useAuth } from '@/contexts/AuthContext';
 import { useToast } from '@/hooks/use-toast';
 import { supabase } from '@/integrations/supabase/client';
@@ -13,6 +13,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FileUpload from '@/components/FileUpload';
 import { Trash2, Edit, X } from 'lucide-react';
+import { majorIndianCities, formatIndianCurrency } from '@/utils/indiaData';
 
 interface Property {
   id: string;
@@ -236,7 +237,7 @@ const Admin = () => {
                   
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="price">Price</Label>
+                      <Label htmlFor="price">Price (₹)</Label>
                       <Input
                         id="price"
                         type="number"
@@ -247,22 +248,43 @@ const Admin = () => {
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="property_type">Property Type</Label>
-                      <Input
-                        id="property_type"
+                      <Select
                         value={formData.property_type}
-                        onChange={(e) => setFormData({...formData, property_type: e.target.value})}
-                      />
+                        onValueChange={(value) => setFormData({...formData, property_type: value})}
+                      >
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select property type" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="Apartment">Apartment</SelectItem>
+                          <SelectItem value="Villa">Villa</SelectItem>
+                          <SelectItem value="Independent House">Independent House</SelectItem>
+                          <SelectItem value="Builder Floor">Builder Floor</SelectItem>
+                          <SelectItem value="Penthouse">Penthouse</SelectItem>
+                          <SelectItem value="Plot">Plot</SelectItem>
+                          <SelectItem value="Commercial">Commercial</SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
                   </div>
 
                   <div className="space-y-2">
                     <Label htmlFor="location">Location</Label>
-                    <Input
-                      id="location"
+                    <Select
                       value={formData.location}
-                      onChange={(e) => setFormData({...formData, location: e.target.value})}
-                      required
-                    />
+                      onValueChange={(value) => setFormData({...formData, location: value})}
+                    >
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select a city" />
+                      </SelectTrigger>
+                      <SelectContent className="max-h-60">
+                        {majorIndianCities.map((city) => (
+                          <SelectItem key={city} value={city}>
+                            {city}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
                   </div>
 
                   <div className="grid grid-cols-3 gap-4">
@@ -390,7 +412,7 @@ const Admin = () => {
                         <div>
                           <h3 className="font-semibold">{property.title}</h3>
                           <p className="text-sm text-gray-600">{property.location}</p>
-                          <p className="text-sm font-medium">${property.price.toLocaleString()}</p>
+                          <p className="text-sm font-medium">{formatIndianCurrency(property.price)}</p>
                         </div>
                       </div>
                       <div className="flex gap-2">
