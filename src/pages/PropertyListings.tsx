@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,13 +8,13 @@ import { Slider } from "@/components/ui/slider";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Search } from "lucide-react";
 
-// Sample properties data
+// Sample properties data with Indian locations and INR currency
 const properties = [
   {
     id: 1,
     title: "Modern Downtown Apartment",
-    price: 425000,
-    location: "San Francisco, CA",
+    price: 8500000,
+    location: "Bandra West, Mumbai",
     bedrooms: 2,
     bathrooms: 2,
     sqft: 1200,
@@ -26,8 +25,8 @@ const properties = [
   {
     id: 2,
     title: "Luxury Beachfront Villa",
-    price: 1250000,
-    location: "Malibu, CA",
+    price: 25000000,
+    location: "Juhu Beach, Mumbai",
     bedrooms: 4,
     bathrooms: 3,
     sqft: 3200,
@@ -37,57 +36,81 @@ const properties = [
   },
   {
     id: 3,
-    title: "Cozy Mountain Retreat",
-    price: 750000,
-    location: "Aspen, CO",
+    title: "Premium IT Sector Apartment",
+    price: 12000000,
+    location: "Electronic City, Bengaluru",
     bedrooms: 3,
     bathrooms: 2,
     sqft: 2100,
     imageUrl: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
-    type: "House"
+    type: "Apartment"
   },
   {
     id: 4,
-    title: "Contemporary Loft",
-    price: 525000,
-    location: "Chicago, IL",
-    bedrooms: 1,
-    bathrooms: 1,
-    sqft: 950,
+    title: "Contemporary Tech Hub Loft",
+    price: 15000000,
+    location: "Gachibowli, Hyderabad",
+    bedrooms: 2,
+    bathrooms: 2,
+    sqft: 1850,
     imageUrl: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "Apartment"
   },
   {
     id: 5,
-    title: "Suburban Family Home",
-    price: 675000,
-    location: "Austin, TX",
+    title: "Spacious Family Villa",
+    price: 18000000,
+    location: "Adyar, Chennai, Tamil Nadu",
     bedrooms: 4,
-    bathrooms: 2.5,
-    sqft: 2600,
+    bathrooms: 3,
+    sqft: 3200,
     imageUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "House"
   },
   {
     id: 6,
-    title: "City Center Studio",
-    price: 320000,
-    location: "Seattle, WA",
-    bedrooms: 0,
+    title: "Central Business District Studio",
+    price: 6500000,
+    location: "Connaught Place, New Delhi",
+    bedrooms: 1,
     bathrooms: 1,
-    sqft: 650,
+    sqft: 850,
     imageUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: false,
     type: "Studio"
+  },
+  {
+    id: 7,
+    title: "Garden City Penthouse",
+    price: 22000000,
+    location: "Koramangala, Bengaluru",
+    bedrooms: 3,
+    bathrooms: 3,
+    sqft: 2800,
+    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    hasVirtualTour: true,
+    type: "Apartment"
+  },
+  {
+    id: 8,
+    title: "Commercial Hub Apartment",
+    price: 9500000,
+    location: "Palasia, Indore",
+    bedrooms: 2,
+    bathrooms: 2,
+    sqft: 1400,
+    imageUrl: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    hasVirtualTour: true,
+    type: "Apartment"
   },
 ];
 
 const PropertyListings = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [priceRange, setPriceRange] = useState([300000, 1300000]);
+  const [priceRange, setPriceRange] = useState([5000000, 30000000]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [minBedrooms, setMinBedrooms] = useState<number>(0);
   const [virtualTourOnly, setVirtualTourOnly] = useState(false);
@@ -161,14 +184,14 @@ const PropertyListings = () => {
                 <div className="mb-6">
                   <Label className="block mb-2">Price Range</Label>
                   <Slider 
-                    defaultValue={[300000, 1300000]} 
-                    max={2000000} 
-                    step={50000} 
+                    defaultValue={[5000000, 30000000]} 
+                    max={50000000} 
+                    step={1000000} 
                     onValueChange={setPriceRange}
                   />
                   <div className="flex justify-between mt-2 text-sm text-realestate-gray">
-                    <span>${priceRange[0].toLocaleString()}</span>
-                    <span>${priceRange[1].toLocaleString()}</span>
+                    <span>₹{(priceRange[0] / 1000000).toFixed(1)}Cr</span>
+                    <span>₹{(priceRange[1] / 1000000).toFixed(1)}Cr</span>
                   </div>
                 </div>
                 
