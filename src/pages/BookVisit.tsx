@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -31,8 +30,8 @@ const BookVisit = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-realestate-gray">
-                    VR Estates Office, Cyber City,<br />
-                    Gurgaon, Haryana 122002
+                    Skye Luxuria, Nipania,<br />
+                    Indore, Madhya Pradesh
                   </p>
                 </CardContent>
               </Card>
@@ -92,7 +91,7 @@ const BookVisit = () => {
                   <CardHeader>
                     <CardTitle>Our Location</CardTitle>
                     <CardDescription>
-                      Conveniently located in Cyber City
+                      Conveniently located in Nipania, Indore
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -100,7 +99,7 @@ const BookVisit = () => {
                       <div className="text-center">
                         <MapPin className="h-6 w-6 text-realestate-teal mx-auto mb-2" />
                         <p className="text-realestate-gray">
-                          VR Estates Office, Cyber City, Gurgaon, Haryana 122002
+                          Skye Luxuria, Nipania, Indore, Madhya Pradesh
                         </p>
                         <p className="text-sm text-realestate-gray/70 mt-1">
                           Map view would be displayed here
@@ -109,7 +108,7 @@ const BookVisit = () => {
                     </div>
                     
                     <p className="text-sm text-realestate-gray">
-                      <strong>Getting here:</strong> Our office is easily accessible by public transportation. We're located two blocks from the Main St. subway station, and several bus lines stop nearby. Limited parking is available in our building's garage.
+                      <strong>Getting here:</strong> Our office is easily accessible by public transportation. We're located in the heart of Nipania with ample parking available nearby.
                     </p>
                   </CardContent>
                 </Card>
