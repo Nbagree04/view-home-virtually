@@ -47,7 +47,7 @@ export const properties: Property[] = [
     bedrooms: 2,
     bathrooms: 2,
     sqft: 1850,
-    imageUrl: "https://images.unsplash.com/photo-1618221195710-dd6b41fa2247?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "Apartment"
   },
