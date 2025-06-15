@@ -1,4 +1,3 @@
-
 import { PropertyProps } from "@/components/PropertyCard";
 
 export type Property = PropertyProps;
@@ -12,7 +11,7 @@ export const properties: Property[] = [
     bedrooms: 2,
     bathrooms: 2,
     sqft: 1200,
-    imageUrl: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "Apartment"
   },
@@ -24,7 +23,7 @@ export const properties: Property[] = [
     bedrooms: 4,
     bathrooms: 3,
     sqft: 3200,
-    imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "House"
   },
@@ -36,7 +35,7 @@ export const properties: Property[] = [
     bedrooms: 3,
     bathrooms: 2,
     sqft: 2100,
-    imageUrl: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "Apartment"
   },
@@ -60,7 +59,7 @@ export const properties: Property[] = [
     bedrooms: 4,
     bathrooms: 3,
     sqft: 3200,
-    imageUrl: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "House"
   },
