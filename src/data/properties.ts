@@ -1,3 +1,4 @@
+
 import { PropertyProps } from "@/components/PropertyCard";
 
 export type Property = PropertyProps;
@@ -13,7 +14,18 @@ export const properties: Property[] = [
     sqft: 1200,
     imageUrl: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
-    type: "Apartment"
+    type: "Apartment",
+    address: "123 Hill Road, Bandra West, Mumbai, Maharashtra 400050",
+    description: "A stunning modern apartment in the heart of Bandra West, offering beautiful city views. Perfect for young professionals and small families. Close to cafes, boutiques, and the bustling city life.",
+    features: ["Modular Kitchen", "Vitrified Flooring", "24/7 Security", "Gym Access", "Reserved Parking"],
+    nearby: ["Bandra Fort (2 km)", "Linking Road Shopping (1 km)", "Lilavati Hospital (1.5 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2020
   },
   {
     id: 2,
@@ -25,7 +37,18 @@ export const properties: Property[] = [
     sqft: 3200,
     imageUrl: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
-    type: "House"
+    type: "House",
+    address: "456 Juhu Tara Road, Juhu, Mumbai, Maharashtra 400049",
+    description: "An exquisite villa with direct access to Juhu Beach. This property boasts panoramic sea views, a private pool, and luxurious interiors, making it a perfect seaside retreat.",
+    features: ["Private Pool", "Sea View", "Italian Marble Flooring", "Home Theatre", "Landscaped Garden"],
+    nearby: ["Juhu Beach (0 km)", "Prithvi Theatre (1 km)", "ISKCON Temple (2 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2018
   },
   {
     id: 3,
@@ -37,7 +60,18 @@ export const properties: Property[] = [
     sqft: 2100,
     imageUrl: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
-    type: "Apartment"
+    type: "Apartment",
+    address: "789 Tech Park Main Road, Electronic City, Bengaluru, Karnataka 560100",
+    description: "A spacious and modern apartment located in Bengaluru's IT hub. Ideal for tech professionals, it offers a great work-life balance with top-notch amenities and connectivity.",
+    features: ["Smart Home Automation", "Clubhouse", "Swimming Pool", "Power Backup", "Jogging Track"],
+    nearby: ["Infosys Campus (2 km)", "Wipro Campus (3 km)", "NeoMall (1 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1493809842704-e142223a2a9a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2021
   },
   {
     id: 4,
@@ -49,7 +83,18 @@ export const properties: Property[] = [
     sqft: 1850,
     imageUrl: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
-    type: "Apartment"
+    type: "Apartment",
+    address: "321 Financial District, Gachibowli, Hyderabad, Telangana 500032",
+    description: "A chic and stylish loft in Hyderabad's financial district. With double-height ceilings and industrial design touches, this property is perfect for those with a contemporary taste.",
+    features: ["Loft Design", "Rooftop Terrace", "24/7 Concierge", "Gym", "Community Hall"],
+    nearby: ["Microsoft Campus (3 km)", "Amazon Campus (4 km)", "Inorbit Mall (5 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560185007-c5ca9d2c015d?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2019
   },
   {
     id: 5,
@@ -61,7 +106,18 @@ export const properties: Property[] = [
     sqft: 3200,
     imageUrl: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
-    type: "House"
+    type: "House",
+    address: "10 Besant Avenue, Adyar, Chennai, Tamil Nadu 600020",
+    description: "A large and welcoming villa in the serene neighborhood of Adyar. This home is perfect for a family, with a private garden, ample space, and proximity to top schools and parks.",
+    features: ["Private Garden", "Servant Quarters", "Solar Water Heater", "Rainwater Harvesting", "Children's Play Area"],
+    nearby: ["IIT Madras (2 km)", "Besant Nagar Beach (3 km)", "Phoenix Marketcity (5 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2015
   },
   {
     id: 6,
@@ -73,7 +129,18 @@ export const properties: Property[] = [
     sqft: 850,
     imageUrl: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: false,
-    type: "Studio"
+    type: "Studio",
+    address: "Block A, Connaught Place, New Delhi, Delhi 110001",
+    description: "A compact and efficient studio apartment in the heart of Delhi's commercial center. It's the perfect urban pad for a single professional or a couple who loves the city buzz.",
+    features: ["Fully Furnished", "24x7 Power Backup", "Metro Connectivity", "High-speed Internet"],
+    nearby: ["Central Park (0.5 km)", "Janpath Market (1 km)", "Rajiv Chowk Metro (0.2 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1599696848349-3c369e5c54a3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2017
   },
   {
     id: 7,
@@ -85,7 +152,18 @@ export const properties: Property[] = [
     sqft: 2800,
     imageUrl: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
-    type: "Apartment"
+    type: "Apartment",
+    address: "5th Block, Koramangala, Bengaluru, Karnataka 560095",
+    description: "A luxurious penthouse in the trendy Koramangala area. This property features a private terrace garden and offers stunning views of the city's green cover.",
+    features: ["Private Terrace", "Jacuzzi", "Double-height Living Room", "Designer Fittings"],
+    nearby: ["Forum Mall (1 km)", "St. John's Hospital (2 km)", "Many Cafes and Restaurants"],
+    images: [
+      "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1605276374104-5de67d608b8a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2019
   },
   {
     id: 8,
@@ -97,7 +175,18 @@ export const properties: Property[] = [
     sqft: 1400,
     imageUrl: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
-    type: "Apartment"
+    type: "Apartment",
+    address: "AB Road, Palasia, Indore, Madhya Pradesh 452001",
+    description: "A well-appointed apartment in Indore's bustling commercial area. Offers great connectivity and access to the city's best shopping and dining experiences.",
+    features: ["Prime Location", "Gated Community", "Modern Amenities", "Covered Parking"],
+    nearby: ["Treasure Island Mall (1 km)", "56 Dukan Food Street (2 km)", "Sayaji Hotel (1.5 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2016
   },
     {
     id: 9,
@@ -109,7 +198,18 @@ export const properties: Property[] = [
     sqft: 4500,
     imageUrl: 'https://images.unsplash.com/photo-1628744444583-4a475b77387a?auto=format&fit=crop&w=800&q=80',
     hasVirtualTour: true,
-    type: 'House'
+    type: 'House',
+    address: "Near Lake Pichola, Udaipur, Rajasthan 313001",
+    description: "Experience royal living in this beautifully restored traditional Haveli. Features intricate Rajasthani architecture, a central courtyard, and views of the historic city.",
+    features: ["Courtyard", "Jharokha Windows", "Heritage Architecture", "Rooftop Restaurant View", "Antique Furniture"],
+    nearby: ["City Palace (1 km)", "Lake Pichola (0.5 km)", "Jagdish Temple (0.8 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1628744444583-4a475b77387a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585153492-bf72884399a2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1574873215043-40494b53b2b4?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 1850
   },
   {
     id: 10,
@@ -121,7 +221,19 @@ export const properties: Property[] = [
     sqft: 2800,
     imageUrl: 'https://images.unsplash.com/photo-1593693411515-c202a013335e?auto=format&fit=crop&w=800&q=80',
     hasVirtualTour: true,
-    type: 'House'
+    type: 'House',
+    address: "Kainakkary, Alappuzha, Kerala 688501",
+    description: "A tranquil retreat nestled by the serene backwaters of Kerala. This property offers a unique blend of traditional architecture and modern comforts, perfect for a peaceful lifestyle.",
+    features: ["Backwater Frontage", "Traditional wooden architecture", "Ayurvedic Spa Room", "Canoe Dock"],
+    nearby: ["Alleppey Beach (8 km)", "Vembanad Lake (5 km)", "Nehru Trophy Finishing Point (4 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1593693411515-c202a013335e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2010
   },
   {
     id: 11,
@@ -133,7 +245,19 @@ export const properties: Property[] = [
     sqft: 3500,
     imageUrl: 'https://images.unsplash.com/photo-1614890013502-c651239b0351?auto=format&fit=crop&w=800&q=80',
     hasVirtualTour: true,
-    type: 'House'
+    type: 'House',
+    address: "Fontainhas, Panaji, Goa 403001",
+    description: "A charming Portuguese-style villa in the colorful Latin Quarter of Goa. This heritage property is full of character with its vibrant facade, balconies, and tiled roofs.",
+    features: ["Portuguese Architecture", "Courtyard with Fountain", "Balcaos (Verandahs)", "Terracotta Roof Tiles"],
+    nearby: ["Miramar Beach (3 km)", "Dona Paula View Point (7 km)", "Our Lady of the Immaculate Conception Church (1 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1614890013502-c651239b0351?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1617806118233-5cf3b3a6b5a3?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 1950
   },
   {
     id: 12,
@@ -145,6 +269,18 @@ export const properties: Property[] = [
     sqft: 1800,
     imageUrl: 'https://images.unsplash.com/photo-1586792352516-e25c8157140f?auto=format&fit=crop&w=800&q=80',
     hasVirtualTour: false,
-    type: 'House'
+    type: 'House',
+    address: "Chotta Shimla, Shimla, Himachal Pradesh 171002",
+    description: "A cozy cottage nestled in the Himalayas. This property offers breathtaking mountain views, a warm fireplace, and a perfect escape from the hustle and bustle of city life.",
+    features: ["Mountain View", "Fireplace", "Wooden Interiors", "Apple Orchard nearby"],
+    nearby: ["The Mall Road (3 km)", "Jakhu Temple (5 km)", "Kufri (15 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1586792352516-e25c8157140f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2005
   },
 ];
