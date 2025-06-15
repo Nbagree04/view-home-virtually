@@ -1,12 +1,23 @@
-
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import Map from "@/components/Map";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 const Contact = () => {
+  const [mapboxToken, setMapboxToken] = useState("");
+
+  const ourLocation = {
+    longitude: 75.8982,
+    latitude: 22.7725,
+    address: "Skye Luxuria, Nipania, Indore, Madhya Pradesh",
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
@@ -113,17 +124,40 @@ const Contact = () => {
               <Card className="mt-6">
                 <CardContent className="p-6">
                   <h2 className="text-lg font-bold text-realestate-blue mb-4">Our Location</h2>
-                  <div className="h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                    <div className="text-center">
-                      <MapPin className="h-6 w-6 text-realestate-teal mx-auto mb-2" />
-                      <p className="text-realestate-gray">
-                        Skye Luxuria, Nipania, Indore, Madhya Pradesh
-                      </p>
-                      <p className="text-sm text-realestate-gray/70 mt-1">
-                        Map view would be displayed here
-                      </p>
+                  {mapboxToken ? (
+                    <div className="h-96 rounded-lg overflow-hidden">
+                       <Map 
+                        accessToken={mapboxToken} 
+                        longitude={ourLocation.longitude}
+                        latitude={ourLocation.latitude}
+                      />
                     </div>
-                  </div>
+                  ) : (
+                     <div>
+                       <Alert>
+                         <MapPin className="h-4 w-4" />
+                         <AlertTitle>Map View requires an Access Token</AlertTitle>
+                         <AlertDescription>
+                           To display the interactive map, please provide a Mapbox public access token. You can create one for free at{' '}
+                           <a href="https://account.mapbox.com/auth/signup/" target="_blank" rel="noopener noreferrer" className="underline font-semibold">Mapbox</a>.
+                         </AlertDescription>
+                       </Alert>
+                       <div className="mt-4 space-y-2">
+                         <Label htmlFor="mapbox-token">Mapbox Public Token</Label>
+                         <Input
+                           id="mapbox-token"
+                           type="password"
+                           value={mapboxToken}
+                           onChange={(e) => setMapboxToken(e.target.value)}
+                           placeholder="pk.ey..."
+                           className="font-mono"
+                         />
+                         <p className="text-sm text-muted-foreground">
+                            Your token is used only for displaying the map and is not stored.
+                          </p>
+                       </div>
+                     </div>
+                  )}
                 </CardContent>
               </Card>
             </div>
