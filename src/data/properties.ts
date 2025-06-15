@@ -1,7 +1,6 @@
-
 import { PropertyProps } from "@/components/PropertyCard";
 
-export type Property = PropertyProps & { type: string };
+export type Property = PropertyProps;
 
 export const properties: Property[] = [
   {
@@ -132,7 +131,7 @@ export const properties: Property[] = [
     bedrooms: 4,
     bathrooms: 4,
     sqft: 3500,
-    imageUrl: 'https://images.unsplash.com/photo-1593856185848-963a55b07897?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1593856185848-2d316143977a?auto=format&fit=crop&w=800&q=80',
     hasVirtualTour: true,
     type: 'House'
   },

@@ -27,7 +27,8 @@ const PropertyCard = ({
   bathrooms, 
   sqft, 
   imageUrl,
-  hasVirtualTour 
+  hasVirtualTour,
+  type
 }: PropertyProps) => {
   return (
     <Link to={`/property/${id}`} className="block">
@@ -38,6 +39,7 @@ const PropertyCard = ({
             alt={title}
             className="w-full h-48 object-cover" 
           />
+          <Badge variant="secondary" className="absolute top-3 left-3">{type}</Badge>
           {hasVirtualTour && (
             <Badge className="absolute top-3 right-3 bg-realestate-teal hover:bg-realestate-teal">
               Virtual Tour

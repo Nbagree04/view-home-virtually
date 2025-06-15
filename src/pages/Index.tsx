@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -16,7 +17,8 @@ const featuredProperties = [{
   bathrooms: 2,
   sqft: 1200,
   imageUrl: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  hasVirtualTour: true
+  hasVirtualTour: true,
+  type: "Apartment"
 }, {
   id: 2,
   title: "Luxury Beachfront Villa",
@@ -26,7 +28,8 @@ const featuredProperties = [{
   bathrooms: 3,
   sqft: 3200,
   imageUrl: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  hasVirtualTour: true
+  hasVirtualTour: true,
+  type: "House"
 }, {
   id: 3,
   title: "Cozy Hill Station Retreat",
@@ -36,7 +39,8 @@ const featuredProperties = [{
   bathrooms: 2,
   sqft: 2100,
   imageUrl: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  hasVirtualTour: true
+  hasVirtualTour: true,
+  type: "House"
 }];
 const testimonials = [{
   name: "Sarah J.",
