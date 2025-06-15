@@ -1,4 +1,3 @@
-
 import { PropertyProps } from "@/components/PropertyCard";
 
 export type Property = PropertyProps;
@@ -188,7 +187,7 @@ export const properties: Property[] = [
     virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
     yearBuilt: 2016
   },
-    {
+  {
     id: 9,
     title: 'Traditional Rajasthani Haveli',
     price: 45000000,
@@ -196,7 +195,7 @@ export const properties: Property[] = [
     bedrooms: 5,
     bathrooms: 4,
     sqft: 4500,
-    imageUrl: 'https://images.unsplash.com/photo-1628744444583-4a475b77387a?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1466442929976-97f336a657be?auto=format&fit=crop&w=800&q=80',
     hasVirtualTour: true,
     type: 'House',
     address: "Near Lake Pichola, Udaipur, Rajasthan 313001",
@@ -204,7 +203,7 @@ export const properties: Property[] = [
     features: ["Courtyard", "Jharokha Windows", "Heritage Architecture", "Rooftop Restaurant View", "Antique Furniture"],
     nearby: ["City Palace (1 km)", "Lake Pichola (0.5 km)", "Jagdish Temple (0.8 km)"],
     images: [
-      "https://images.unsplash.com/photo-1628744444583-4a475b77387a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1466442929976-97f336a657be?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1600585153492-bf72884399a2?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1574873215043-40494b53b2b4?auto=format&fit=crop&w=800&q=80"
     ],
@@ -219,7 +218,7 @@ export const properties: Property[] = [
     bedrooms: 3,
     bathrooms: 3,
     sqft: 2800,
-    imageUrl: 'https://images.unsplash.com/photo-1593693411515-c202a013335e?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=800&q=80',
     hasVirtualTour: true,
     type: 'House',
     address: "Kainakkary, Alappuzha, Kerala 688501",
@@ -227,7 +226,7 @@ export const properties: Property[] = [
     features: ["Backwater Frontage", "Traditional wooden architecture", "Ayurvedic Spa Room", "Canoe Dock"],
     nearby: ["Alleppey Beach (8 km)", "Vembanad Lake (5 km)", "Nehru Trophy Finishing Point (4 km)"],
     images: [
-      "https://images.unsplash.com/photo-1593693411515-c202a013335e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80"
@@ -243,7 +242,7 @@ export const properties: Property[] = [
     bedrooms: 4,
     bathrooms: 4,
     sqft: 3500,
-    imageUrl: 'https://images.unsplash.com/photo-1614890013502-c651239b0351?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80',
     hasVirtualTour: true,
     type: 'House',
     address: "Fontainhas, Panaji, Goa 403001",
@@ -251,7 +250,7 @@ export const properties: Property[] = [
     features: ["Portuguese Architecture", "Courtyard with Fountain", "Balcaos (Verandahs)", "Terracotta Roof Tiles"],
     nearby: ["Miramar Beach (3 km)", "Dona Paula View Point (7 km)", "Our Lady of the Immaculate Conception Church (1 km)"],
     images: [
-      "https://images.unsplash.com/photo-1614890013502-c651239b0351?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1617806118233-5cf3b3a6b5a3?auto=format&fit=crop&w=800&q=80"
@@ -267,7 +266,7 @@ export const properties: Property[] = [
     bedrooms: 2,
     bathrooms: 2,
     sqft: 1800,
-    imageUrl: 'https://images.unsplash.com/photo-1586792352516-e25c8157140f?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80',
     hasVirtualTour: false,
     type: 'House',
     address: "Chotta Shimla, Shimla, Himachal Pradesh 171002",
@@ -275,7 +274,7 @@ export const properties: Property[] = [
     features: ["Mountain View", "Fireplace", "Wooden Interiors", "Apple Orchard nearby"],
     nearby: ["The Mall Road (3 km)", "Jakhu Temple (5 km)", "Kufri (15 km)"],
     images: [
-      "https://images.unsplash.com/photo-1586792352516-e25c8157140f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=800&q=80"
