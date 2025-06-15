@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -19,7 +18,7 @@ const properties = [
     bedrooms: 2,
     bathrooms: 2,
     sqft: 1200,
-    imageUrl: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "Apartment"
   },
@@ -31,7 +30,7 @@ const properties = [
     bedrooms: 4,
     bathrooms: 3,
     sqft: 3200,
-    imageUrl: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80", // South Indian Villa
     hasVirtualTour: true,
     type: "House"
   },
@@ -43,7 +42,7 @@ const properties = [
     bedrooms: 3,
     bathrooms: 2,
     sqft: 2100,
-    imageUrl: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80", // Bengaluru Apartment
     hasVirtualTour: true,
     type: "Apartment"
   },
@@ -55,7 +54,7 @@ const properties = [
     bedrooms: 2,
     bathrooms: 2,
     sqft: 1850,
-    imageUrl: "https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?auto=format&fit=crop&w=800&q=80", // Modern villa Hyderabad
     hasVirtualTour: true,
     type: "Apartment"
   },
@@ -67,7 +66,7 @@ const properties = [
     bedrooms: 4,
     bathrooms: 3,
     sqft: 3200,
-    imageUrl: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1449247613801-ab06418e2861?auto=format&fit=crop&w=800&q=80", // Living Room/Interior
     hasVirtualTour: true,
     type: "House"
   },
@@ -79,7 +78,7 @@ const properties = [
     bedrooms: 1,
     bathrooms: 1,
     sqft: 850,
-    imageUrl: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1544986581-efac024faf62?auto=format&fit=crop&w=800&q=80", // Delhi Apartment Complex
     hasVirtualTour: false,
     type: "Studio"
   },
@@ -91,7 +90,7 @@ const properties = [
     bedrooms: 3,
     bathrooms: 3,
     sqft: 2800,
-    imageUrl: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80", // Balcony View/Greenery
     hasVirtualTour: true,
     type: "Apartment"
   },
@@ -103,7 +102,7 @@ const properties = [
     bedrooms: 2,
     bathrooms: 2,
     sqft: 1400,
-    imageUrl: "https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=800&q=80", // Heritage Home
     hasVirtualTour: true,
     type: "Apartment"
   },
