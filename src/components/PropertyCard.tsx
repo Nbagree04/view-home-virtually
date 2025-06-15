@@ -15,6 +15,7 @@ export interface PropertyProps {
   sqft: number;
   imageUrl: string;
   hasVirtualTour: boolean;
+  type: string;
 }
 
 const PropertyCard = ({ 
