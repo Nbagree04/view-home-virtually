@@ -54,7 +54,7 @@ const properties = [
     bedrooms: 2,
     bathrooms: 2,
     sqft: 1850,
-    imageUrl: "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?auto=format&fit=crop&w=800&q=80", // Modern villa Hyderabad
+    imageUrl: "https://images.unsplash.com/photo-1618221195710-dd6b41fa2247?auto=format&fit=crop&w=800&q=80", // Modern living room
     hasVirtualTour: true,
     type: "Apartment"
   },
@@ -78,7 +78,7 @@ const properties = [
     bedrooms: 1,
     bathrooms: 1,
     sqft: 850,
-    imageUrl: "https://images.unsplash.com/photo-1544986581-efac024faf62?auto=format&fit=crop&w=800&q=80", // Delhi Apartment Complex
+    imageUrl: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80", // Stylish small living area
     hasVirtualTour: false,
     type: "Studio"
   },
@@ -90,7 +90,7 @@ const properties = [
     bedrooms: 3,
     bathrooms: 3,
     sqft: 2800,
-    imageUrl: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80", // Balcony View/Greenery
+    imageUrl: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80", // luxury living room
     hasVirtualTour: true,
     type: "Apartment"
   },
