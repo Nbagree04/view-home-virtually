@@ -1,3 +1,4 @@
+
 import { PropertyProps } from "@/components/PropertyCard";
 
 export type Property = PropertyProps;
@@ -119,7 +120,7 @@ export const properties: Property[] = [
     bedrooms: 3,
     bathrooms: 3,
     sqft: 2800,
-    imageUrl: 'https://images.unsplash.com/photo-1629814438318-7b9913508492?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1593693411515-c202a013335e?auto=format&fit=crop&w=800&q=80',
     hasVirtualTour: true,
     type: 'House'
   },
@@ -131,7 +132,7 @@ export const properties: Property[] = [
     bedrooms: 4,
     bathrooms: 4,
     sqft: 3500,
-    imageUrl: 'https://images.unsplash.com/photo-1593856185848-2d316143977a?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1614890013502-c651239b0351?auto=format&fit=crop&w=800&q=80',
     hasVirtualTour: true,
     type: 'House'
   },
@@ -143,7 +144,7 @@ export const properties: Property[] = [
     bedrooms: 2,
     bathrooms: 2,
     sqft: 1800,
-    imageUrl: 'https://images.unsplash.com/photo-1587394101146-2d316143977a?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1586792352516-e25c8157140f?auto=format&fit=crop&w=800&q=80',
     hasVirtualTour: false,
     type: 'House'
   },
