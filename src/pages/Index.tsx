@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -6,42 +5,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PropertyCard from "@/components/PropertyCard";
 import { Camera, Calendar, MapPin } from "lucide-react";
+import { properties } from "@/data/properties";
 
-// Sample properties data with Indian locations and INR currency
-const featuredProperties = [{
-  id: 1,
-  title: "Modern Downtown Apartment",
-  price: 8500000,
-  location: "Bandra West, Mumbai",
-  bedrooms: 2,
-  bathrooms: 2,
-  sqft: 1200,
-  imageUrl: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  hasVirtualTour: true,
-  type: "Apartment"
-}, {
-  id: 2,
-  title: "Luxury Beachfront Villa",
-  price: 25000000,
-  location: "Juhu Beach, Mumbai",
-  bedrooms: 4,
-  bathrooms: 3,
-  sqft: 3200,
-  imageUrl: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  hasVirtualTour: true,
-  type: "House"
-}, {
-  id: 3,
-  title: "Cozy Hill Station Retreat",
-  price: 12000000,
-  location: "Kotagiri, Tamil Nadu",
-  bedrooms: 3,
-  bathrooms: 2,
-  sqft: 2100,
-  imageUrl: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  hasVirtualTour: true,
-  type: "House"
-}];
+// Use the first 3 properties from the main list as featured
+const featuredProperties = properties.slice(0, 3);
+
 const testimonials = [{
   name: "Sarah J.",
   text: "The virtual tour saved me so much time! I was able to narrow down my choices before even visiting in person.",
