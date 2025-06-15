@@ -7,7 +7,7 @@ export const properties: Property[] = [
   {
     id: 1,
     title: "Modern Downtown Apartment",
-    price: 8500000,
+    price: 11500000,
     location: "Bandra West, Mumbai",
     bedrooms: 2,
     bathrooms: 2,
@@ -30,7 +30,7 @@ export const properties: Property[] = [
   {
     id: 2,
     title: "Luxury Beachfront Villa",
-    price: 25000000,
+    price: 35000000,
     location: "Juhu Beach, Mumbai",
     bedrooms: 4,
     bathrooms: 3,
@@ -53,7 +53,7 @@ export const properties: Property[] = [
   {
     id: 3,
     title: "Premium IT Sector Apartment",
-    price: 12000000,
+    price: 15000000,
     location: "Electronic City, Bengaluru",
     bedrooms: 3,
     bathrooms: 2,
@@ -76,7 +76,7 @@ export const properties: Property[] = [
   {
     id: 4,
     title: "Contemporary Tech Hub Loft",
-    price: 15000000,
+    price: 17500000,
     location: "Gachibowli, Hyderabad",
     bedrooms: 2,
     bathrooms: 2,
@@ -99,7 +99,7 @@ export const properties: Property[] = [
   {
     id: 5,
     title: "Spacious Family Villa",
-    price: 18000000,
+    price: 21000000,
     location: "Adyar, Chennai, Tamil Nadu",
     bedrooms: 4,
     bathrooms: 3,
@@ -122,7 +122,7 @@ export const properties: Property[] = [
   {
     id: 6,
     title: "Central Business District Studio",
-    price: 6500000,
+    price: 11000000,
     location: "Connaught Place, New Delhi",
     bedrooms: 1,
     bathrooms: 1,
@@ -145,7 +145,7 @@ export const properties: Property[] = [
   {
     id: 7,
     title: "Garden City Penthouse",
-    price: 22000000,
+    price: 28000000,
     location: "Koramangala, Bengaluru",
     bedrooms: 3,
     bathrooms: 3,
@@ -168,7 +168,7 @@ export const properties: Property[] = [
   {
     id: 8,
     title: "Commercial Hub Apartment",
-    price: 9500000,
+    price: 12500000,
     location: "Palasia, Indore",
     bedrooms: 2,
     bathrooms: 2,
@@ -191,7 +191,7 @@ export const properties: Property[] = [
     {
     id: 9,
     title: 'Traditional Rajasthani Haveli',
-    price: 35000000,
+    price: 45000000,
     location: 'Udaipur, Rajasthan',
     bedrooms: 5,
     bathrooms: 4,
@@ -214,7 +214,7 @@ export const properties: Property[] = [
   {
     id: 10,
     title: 'Kerala Backwaters Retreat',
-    price: 18000000,
+    price: 22500000,
     location: 'Alappuzha, Kerala',
     bedrooms: 3,
     bathrooms: 3,
@@ -238,7 +238,7 @@ export const properties: Property[] = [
   {
     id: 11,
     title: 'Goan Portuguese Style Villa',
-    price: 22000000,
+    price: 27500000,
     location: 'Panaji, Goa',
     bedrooms: 4,
     bathrooms: 4,
@@ -262,7 +262,7 @@ export const properties: Property[] = [
   {
     id: 12,
     title: 'Himalayan Mountain Cottage',
-    price: 9500000,
+    price: 14500000,
     location: 'Shimla, Himachal Pradesh',
     bedrooms: 2,
     bathrooms: 2,

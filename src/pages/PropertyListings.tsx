@@ -9,7 +9,7 @@ import { properties } from "@/data/properties";
 
 const PropertyListings = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [priceRange, setPriceRange] = useState([5000000, 30000000]);
+  const [priceRange, setPriceRange] = useState([10000000, 100000000]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [minBedrooms, setMinBedrooms] = useState<number>(0);
   const [virtualTourOnly, setVirtualTourOnly] = useState(false);

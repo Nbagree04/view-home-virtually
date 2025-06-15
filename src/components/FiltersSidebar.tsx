@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
@@ -36,13 +35,13 @@ const FiltersSidebar: React.FC<FiltersSidebarProps> = ({
           <Label className="block mb-2">Price Range</Label>
           <Slider 
             defaultValue={priceRange} 
-            max={50000000} 
+            max={100000000} 
             step={1000000} 
             onValueChange={setPriceRange}
           />
           <div className="flex justify-between mt-2 text-sm text-realestate-gray">
-            <span>₹{(priceRange[0] / 1000000).toFixed(1)}Cr</span>
-            <span>₹{(priceRange[1] / 1000000).toFixed(1)}Cr</span>
+            <span>₹{(priceRange[0] / 10000000).toFixed(1)}Cr</span>
+            <span>₹{(priceRange[1] / 10000000).toFixed(1)}Cr</span>
           </div>
         </div>
         

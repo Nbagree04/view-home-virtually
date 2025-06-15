@@ -16,13 +16,13 @@ export interface PropertyProps {
   imageUrl: string;
   hasVirtualTour: boolean;
   type: string;
-  address: string;
-  description: string;
-  features: string[];
-  nearby: string[];
-  images: string[];
-  virtualTourUrl: string;
-  yearBuilt: number;
+  address?: string;
+  description?: string;
+  features?: string[];
+  nearby?: string[];
+  images?: string[];
+  virtualTourUrl?: string;
+  yearBuilt?: number;
 }
 
 const PropertyCard = ({ 
