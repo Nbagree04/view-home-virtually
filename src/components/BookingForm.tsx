@@ -102,7 +102,7 @@ const BookingForm = ({ propertyId = null }: { propertyId?: number | null }) => {
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="John Smith"
+          placeholder="e.g. Priya Sharma"
           required
         />
       </div>
@@ -115,7 +115,7 @@ const BookingForm = ({ propertyId = null }: { propertyId?: number | null }) => {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="john.smith@example.com"
+            placeholder="e.g. priya.sharma@example.com"
             required
           />
         </div>
@@ -127,7 +127,7 @@ const BookingForm = ({ propertyId = null }: { propertyId?: number | null }) => {
             type="tel"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            placeholder="(123) 456-7890"
+            placeholder="e.g. +91 98765 43210"
             required
           />
         </div>

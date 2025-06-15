@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookingForm from "@/components/BookingForm";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Clock, Calendar, MapPin } from "lucide-react";
 
 const BookVisit = () => {
@@ -31,8 +31,8 @@ const BookVisit = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-realestate-gray">
-                    123 Real Estate Blvd,<br />
-                    San Francisco, CA 94105
+                    VR Estates Office, Cyber City,<br />
+                    Gurgaon, Haryana 122002
                   </p>
                 </CardContent>
               </Card>
@@ -92,7 +92,7 @@ const BookVisit = () => {
                   <CardHeader>
                     <CardTitle>Our Location</CardTitle>
                     <CardDescription>
-                      Conveniently located in downtown
+                      Conveniently located in Cyber City
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -100,7 +100,7 @@ const BookVisit = () => {
                       <div className="text-center">
                         <MapPin className="h-6 w-6 text-realestate-teal mx-auto mb-2" />
                         <p className="text-realestate-gray">
-                          123 Real Estate Blvd, San Francisco, CA 94105
+                          VR Estates Office, Cyber City, Gurgaon, Haryana 122002
                         </p>
                         <p className="text-sm text-realestate-gray/70 mt-1">
                           Map view would be displayed here
