@@ -104,7 +104,7 @@ const Contact = () => {
             <div className="lg:col-span-2">
               <Card>
                 <CardContent className="p-6">
-                  <h2 className="text-2xl font-bold text-realestate-blue mb-6">Send Us a Message</h2>
+                  <h2 className="text-2xl font-bold text-realestate-blue mb-6">Get in Touch with Us</h2>
                   <ContactForm />
                 </CardContent>
               </Card>

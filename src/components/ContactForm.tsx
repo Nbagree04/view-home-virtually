@@ -97,7 +97,7 @@ const ContactForm = () => {
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="John Smith"
+          placeholder="Rohan Sharma"
           required
         />
       </div>
@@ -110,7 +110,7 @@ const ContactForm = () => {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="john.smith@example.com"
+            placeholder="rohan.sharma@example.com"
             required
           />
         </div>
@@ -122,7 +122,7 @@ const ContactForm = () => {
             type="tel"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            placeholder="(123) 456-7890"
+            placeholder="+91 98765 43210"
           />
         </div>
       </div>
@@ -134,7 +134,7 @@ const ContactForm = () => {
           type="text"
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
-          placeholder="Inquiry about properties"
+          placeholder="Enquiry about properties in Mumbai"
           required
         />
       </div>
@@ -145,7 +145,7 @@ const ContactForm = () => {
           id="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="Your message here..."
+          placeholder="Type your query here..."
           rows={5}
           required
         />
