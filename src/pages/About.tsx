@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -8,9 +7,9 @@ import { Link } from "react-router-dom";
 
 const teamMembers = [
   {
-    name: "David Wilson",
+    name: "Nakul Bagree",
     position: "Founder & CEO",
-    bio: "David has 15 years of experience in real estate and was an early adopter of VR technology for property tours.",
+    bio: "Nakul, an entrepreneur with a passion for technology, founded VR Estates in 2025 to make home buying simpler and more transparent using immersive VR.",
     imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   },
   {
@@ -62,13 +61,13 @@ const About = () => {
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold text-realestate-blue mb-4">Our Story</h2>
               <p className="text-realestate-gray mb-4">
-                VR Estates was founded in 2018 with a simple but powerful vision: to transform how people experience and purchase real estate. Our founder, David Wilson, recognized the limitations of traditional property viewings and the frustrations of buyers who wasted time visiting unsuitable properties.
+                VR Estates was founded in 2025 by Nakul Bagree with a revolutionary vision: to redefine the real estate landscape in India. Witnessing the challenges faced by homebuyers—from endless site visits to a lack of transparency—Nakul envisioned a future where technology could bridge the gap between aspiration and reality.
               </p>
               <p className="text-realestate-gray mb-4">
-                By leveraging cutting-edge virtual reality technology, we created a platform that allows buyers to tour multiple properties remotely, gaining an authentic feel for the space before scheduling in-person visits. This approach saves time for both buyers and sellers, reduces the carbon footprint associated with property viewing, and makes the entire process more efficient.
+                Harnessing the power of immersive virtual reality, we developed a platform that offers lifelike property tours from the comfort of one's home. This not only saves precious time for both buyers and sellers but also promotes a more sustainable and efficient property discovery process.
               </p>
               <p className="text-realestate-gray">
-                Today, VR Estates has expanded to serve multiple cities across the country, with a growing team of real estate and technology professionals committed to providing an unmatched property shopping experience.
+                Today, VR Estates is a fast-growing name across major Indian cities, driven by a passionate team of tech innovators and real estate experts dedicated to delivering a seamless and trustworthy home-buying journey.
               </p>
             </div>
           </div>
