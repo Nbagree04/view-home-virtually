@@ -1,27 +1,12 @@
 
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import Map from "@/components/Map";
-import GoogleMap from "@/components/GoogleMap";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Contact = () => {
-  const [mapboxToken, setMapboxToken] = useState("");
-  const [googleMapsApiKey, setGoogleMapsApiKey] = useState("");
-
-  const ourLocation = {
-    longitude: 75.8982,
-    latitude: 22.7725,
-    address: "Skye Luxuria, Nipania, Indore, Madhya Pradesh",
-  };
-
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
@@ -128,89 +113,18 @@ const Contact = () => {
               <Card className="mt-6">
                 <CardContent className="p-6">
                   <h2 className="text-lg font-bold text-realestate-blue mb-4">Our Location</h2>
-                  {mapboxToken || googleMapsApiKey ? (
-                    <Tabs defaultValue="google" className="w-full">
-                      <TabsList className="grid w-full grid-cols-2">
-                        <TabsTrigger value="google">Google Maps</TabsTrigger>
-                        <TabsTrigger value="mapbox">Mapbox</TabsTrigger>
-                      </TabsList>
-                      <TabsContent value="google" className="mt-4">
-                        {googleMapsApiKey ? (
-                          <div className="h-96 rounded-lg overflow-hidden">
-                            <GoogleMap 
-                              apiKey={googleMapsApiKey}
-                              longitude={ourLocation.longitude}
-                              latitude={ourLocation.latitude}
-                            />
-                          </div>
-                        ) : (
-                          <div className="h-96 flex items-center justify-center bg-gray-100 rounded-lg">
-                            <p className="text-gray-500">Please enter Google Maps API key to view map</p>
-                          </div>
-                        )}
-                      </TabsContent>
-                      <TabsContent value="mapbox" className="mt-4">
-                        {mapboxToken ? (
-                          <div className="h-96 rounded-lg overflow-hidden">
-                            <Map 
-                              accessToken={mapboxToken} 
-                              longitude={ourLocation.longitude}
-                              latitude={ourLocation.latitude}
-                            />
-                          </div>
-                        ) : (
-                          <div className="h-96 flex items-center justify-center bg-gray-100 rounded-lg">
-                            <p className="text-gray-500">Please enter Mapbox token to view map</p>
-                          </div>
-                        )}
-                      </TabsContent>
-                    </Tabs>
-                  ) : (
-                    <div>
-                      <Alert>
-                        <MapPin className="h-4 w-4" />
-                        <AlertTitle>Map View requires API Keys</AlertTitle>
-                        <AlertDescription>
-                          To display interactive maps, please provide either a Google Maps API key or Mapbox public access token.
-                        </AlertDescription>
-                      </Alert>
-                      <div className="mt-4 space-y-4">
-                        <div className="space-y-2">
-                          <Label htmlFor="google-maps-key">Google Maps API Key</Label>
-                          <Input
-                            id="google-maps-key"
-                            type="password"
-                            value={googleMapsApiKey}
-                            onChange={(e) => setGoogleMapsApiKey(e.target.value)}
-                            placeholder="AIza..."
-                            className="font-mono"
-                          />
-                          <p className="text-sm text-muted-foreground">
-                            Get your API key from{' '}
-                            <a href="https://console.cloud.google.com/google/maps-apis" target="_blank" rel="noopener noreferrer" className="underline font-semibold">Google Cloud Console</a>
-                          </p>
-                        </div>
-                        <div className="space-y-2">
-                          <Label htmlFor="mapbox-token">Mapbox Public Token</Label>
-                          <Input
-                            id="mapbox-token"
-                            type="password"
-                            value={mapboxToken}
-                            onChange={(e) => setMapboxToken(e.target.value)}
-                            placeholder="pk.ey..."
-                            className="font-mono"
-                          />
-                          <p className="text-sm text-muted-foreground">
-                            Get your token from{' '}
-                            <a href="https://account.mapbox.com/auth/signup/" target="_blank" rel="noopener noreferrer" className="underline font-semibold">Mapbox</a>
-                          </p>
-                        </div>
-                        <p className="text-sm text-muted-foreground">
-                          Your keys are used only for displaying the map and are not stored.
-                        </p>
-                      </div>
-                    </div>
-                  )}
+                  <div className="w-full rounded-lg overflow-hidden">
+                    <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1839.6009787577418!2d75.9217890381583!3d22.757885218235977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39631d5e03389b91%3A0x951b616fdf221d24!2sSkye%20Luxuria%2C%20Nipania%2C%20Indore%2C%20Madhya%20Pradesh%20452010!5e0!3m2!1sen!2sin!4v1750091770033!5m2!1sen!2sin" 
+                      width="100%" 
+                      height="400" 
+                      style={{ border: 0 }} 
+                      allowFullScreen 
+                      loading="lazy" 
+                      referrerPolicy="no-referrer-when-downgrade"
+                      className="rounded-lg"
+                    />
+                  </div>
                 </CardContent>
               </Card>
             </div>
