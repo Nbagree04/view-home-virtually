@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -5,12 +6,15 @@ import ContactForm from "@/components/ContactForm";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import Map from "@/components/Map";
+import GoogleMap from "@/components/GoogleMap";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Contact = () => {
   const [mapboxToken, setMapboxToken] = useState("");
+  const [googleMapsApiKey, setGoogleMapsApiKey] = useState("");
 
   const ourLocation = {
     longitude: 75.8982,
@@ -124,39 +128,88 @@ const Contact = () => {
               <Card className="mt-6">
                 <CardContent className="p-6">
                   <h2 className="text-lg font-bold text-realestate-blue mb-4">Our Location</h2>
-                  {mapboxToken ? (
-                    <div className="h-96 rounded-lg overflow-hidden">
-                       <Map 
-                        accessToken={mapboxToken} 
-                        longitude={ourLocation.longitude}
-                        latitude={ourLocation.latitude}
-                      />
-                    </div>
+                  {mapboxToken || googleMapsApiKey ? (
+                    <Tabs defaultValue="google" className="w-full">
+                      <TabsList className="grid w-full grid-cols-2">
+                        <TabsTrigger value="google">Google Maps</TabsTrigger>
+                        <TabsTrigger value="mapbox">Mapbox</TabsTrigger>
+                      </TabsList>
+                      <TabsContent value="google" className="mt-4">
+                        {googleMapsApiKey ? (
+                          <div className="h-96 rounded-lg overflow-hidden">
+                            <GoogleMap 
+                              apiKey={googleMapsApiKey}
+                              longitude={ourLocation.longitude}
+                              latitude={ourLocation.latitude}
+                            />
+                          </div>
+                        ) : (
+                          <div className="h-96 flex items-center justify-center bg-gray-100 rounded-lg">
+                            <p className="text-gray-500">Please enter Google Maps API key to view map</p>
+                          </div>
+                        )}
+                      </TabsContent>
+                      <TabsContent value="mapbox" className="mt-4">
+                        {mapboxToken ? (
+                          <div className="h-96 rounded-lg overflow-hidden">
+                            <Map 
+                              accessToken={mapboxToken} 
+                              longitude={ourLocation.longitude}
+                              latitude={ourLocation.latitude}
+                            />
+                          </div>
+                        ) : (
+                          <div className="h-96 flex items-center justify-center bg-gray-100 rounded-lg">
+                            <p className="text-gray-500">Please enter Mapbox token to view map</p>
+                          </div>
+                        )}
+                      </TabsContent>
+                    </Tabs>
                   ) : (
-                     <div>
-                       <Alert>
-                         <MapPin className="h-4 w-4" />
-                         <AlertTitle>Map View requires an Access Token</AlertTitle>
-                         <AlertDescription>
-                           To display the interactive map, please provide a Mapbox public access token. You can create one for free at{' '}
-                           <a href="https://account.mapbox.com/auth/signup/" target="_blank" rel="noopener noreferrer" className="underline font-semibold">Mapbox</a>.
-                         </AlertDescription>
-                       </Alert>
-                       <div className="mt-4 space-y-2">
-                         <Label htmlFor="mapbox-token">Mapbox Public Token</Label>
-                         <Input
-                           id="mapbox-token"
-                           type="password"
-                           value={mapboxToken}
-                           onChange={(e) => setMapboxToken(e.target.value)}
-                           placeholder="pk.ey..."
-                           className="font-mono"
-                         />
-                         <p className="text-sm text-muted-foreground">
-                            Your token is used only for displaying the map and is not stored.
+                    <div>
+                      <Alert>
+                        <MapPin className="h-4 w-4" />
+                        <AlertTitle>Map View requires API Keys</AlertTitle>
+                        <AlertDescription>
+                          To display interactive maps, please provide either a Google Maps API key or Mapbox public access token.
+                        </AlertDescription>
+                      </Alert>
+                      <div className="mt-4 space-y-4">
+                        <div className="space-y-2">
+                          <Label htmlFor="google-maps-key">Google Maps API Key</Label>
+                          <Input
+                            id="google-maps-key"
+                            type="password"
+                            value={googleMapsApiKey}
+                            onChange={(e) => setGoogleMapsApiKey(e.target.value)}
+                            placeholder="AIza..."
+                            className="font-mono"
+                          />
+                          <p className="text-sm text-muted-foreground">
+                            Get your API key from{' '}
+                            <a href="https://console.cloud.google.com/google/maps-apis" target="_blank" rel="noopener noreferrer" className="underline font-semibold">Google Cloud Console</a>
                           </p>
-                       </div>
-                     </div>
+                        </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="mapbox-token">Mapbox Public Token</Label>
+                          <Input
+                            id="mapbox-token"
+                            type="password"
+                            value={mapboxToken}
+                            onChange={(e) => setMapboxToken(e.target.value)}
+                            placeholder="pk.ey..."
+                            className="font-mono"
+                          />
+                          <p className="text-sm text-muted-foreground">
+                            Get your token from{' '}
+                            <a href="https://account.mapbox.com/auth/signup/" target="_blank" rel="noopener noreferrer" className="underline font-semibold">Mapbox</a>
+                          </p>
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          Your keys are used only for displaying the map and are not stored.
+                        </p>
+                      </div>
+                    </div>
                   )}
                 </CardContent>
               </Card>
