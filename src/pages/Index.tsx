@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -14,7 +15,7 @@ const featuredProperties = properties.slice(0, 3);
 const testimonials = [{
   name: "Priya Sharma",
   text: "The virtual tour technology saved us countless hours! We could explore multiple properties from Mumbai to Delhi without traveling. Highly recommend VR Estates!",
-  imageUrl: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
+  imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
 }, {
   name: "Rajesh Kumar",
   text: "As a busy professional, the VR tours allowed me to shortlist properties during my lunch breaks. The immersive experience gave me confidence in my final choice.",
