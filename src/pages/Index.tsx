@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -13,15 +14,15 @@ const featuredProperties = properties.slice(0, 3);
 const testimonials = [{
   name: "Priya Sharma",
   text: "The virtual tour technology saved us countless hours! We could explore multiple properties from Mumbai to Delhi without traveling. Highly recommend VR Estates!",
-  imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
+  imageUrl: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
 }, {
   name: "Rajesh Kumar",
   text: "As a busy professional, the VR tours allowed me to shortlist properties during my lunch breaks. The immersive experience gave me confidence in my final choice.",
-  imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
+  imageUrl: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
 }, {
   name: "Anita Patel",
   text: "Moving from Bangalore to Indore was stressful, but VR Estates made house hunting effortless. The virtual tours felt like I was actually walking through each home!",
-  imageUrl: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
+  imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
 }];
 
 const Index = () => {
