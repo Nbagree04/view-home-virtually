@@ -11,18 +11,19 @@ import { properties } from "@/data/properties";
 const featuredProperties = properties.slice(0, 3);
 
 const testimonials = [{
-  name: "Sarah J.",
-  text: "The virtual tour saved me so much time! I was able to narrow down my choices before even visiting in person.",
+  name: "Priya Sharma",
+  text: "The virtual tour technology saved us countless hours! We could explore multiple properties from Mumbai to Delhi without traveling. Highly recommend VR Estates!",
   imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
 }, {
-  name: "Michael T.",
-  text: "Being able to virtually walk through properties from my own home was a game-changer in our house hunting process.",
+  name: "Rajesh Kumar",
+  text: "As a busy professional, the VR tours allowed me to shortlist properties during my lunch breaks. The immersive experience gave me confidence in my final choice.",
   imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
 }, {
-  name: "Emma R.",
-  text: "VR Estates made finding our dream home an immersive experience. Their team was professional and attentive throughout.",
+  name: "Anita Patel",
+  text: "Moving from Bangalore to Indore was stressful, but VR Estates made house hunting effortless. The virtual tours felt like I was actually walking through each home!",
   imageUrl: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
 }];
+
 const Index = () => {
   return <div className="flex flex-col min-h-screen">
       <Navbar />
