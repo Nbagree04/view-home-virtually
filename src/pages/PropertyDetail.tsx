@@ -45,6 +45,12 @@ const PropertyDetail = () => {
     );
   }
 
+  // Generate Google Maps embed URL based on property address
+  const generateMapUrl = (address: string) => {
+    const encodedAddress = encodeURIComponent(address);
+    return `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dOWTgKGT8Gfg8g&q=${encodedAddress}`;
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
@@ -191,16 +197,18 @@ const PropertyDetail = () => {
                   </TabsContent>
                   
                   <TabsContent value="map">
-                    <div className="h-80 bg-gray-200 rounded-lg flex items-center justify-center">
-                      <div className="text-center">
-                        <MapPin className="h-6 w-6 text-realestate-teal mx-auto mb-2" />
-                        <p className="text-realestate-gray">
-                          {property.address}
-                        </p>
-                        <p className="text-sm text-realestate-gray/70 mt-1">
-                          Map view would be displayed here
-                        </p>
-                      </div>
+                    <div className="w-full rounded-lg overflow-hidden">
+                      <iframe 
+                        src={generateMapUrl(property.address || property.location)}
+                        width="100%" 
+                        height="400" 
+                        style={{ border: 0 }} 
+                        allowFullScreen 
+                        loading="lazy" 
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="rounded-lg"
+                        title={`Map location for ${property.title}`}
+                      />
                     </div>
                   </TabsContent>
                 </Tabs>
