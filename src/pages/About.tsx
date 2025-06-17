@@ -1,3 +1,4 @@
+
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -10,25 +11,25 @@ const teamMembers = [
     name: "Nakul Bagree",
     position: "Founder & CEO",
     bio: "Nakul, an entrepreneur with a passion for technology, founded VR Estates in 2025 to make home buying simpler and more transparent using immersive VR.",
-    imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    imageUrl: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   },
   {
-    name: "Sarah Rodriguez",
+    name: "Priya Mehta",
     position: "Head of VR Production",
-    bio: "Sarah leads our VR production team with her background in architectural visualization and 3D technology.",
-    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    bio: "Priya leads our VR production team with her background in architectural visualization and 3D technology.",
+    imageUrl: "https://images.unsplash.com/photo-1594736797933-d0da7ba4d4ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   },
   {
-    name: "Michael Chen",
+    name: "Arjun Singh",
     position: "Lead Real Estate Agent",
-    bio: "Michael's extensive knowledge of the local market and client-focused approach has helped hundreds find their dream homes.",
-    imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    bio: "Arjun's extensive knowledge of the local market and client-focused approach has helped hundreds find their dream homes.",
+    imageUrl: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   },
   {
-    name: "Lisa Johnson",
+    name: "Kavya Patel",
     position: "Customer Experience Manager",
-    bio: "Lisa ensures every client receives personalized attention and a seamless experience throughout their property search.",
-    imageUrl: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    bio: "Kavya ensures every client receives personalized attention and a seamless experience throughout their property search.",
+    imageUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   }
 ];
 
