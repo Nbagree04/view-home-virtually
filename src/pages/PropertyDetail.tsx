@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
@@ -42,6 +43,8 @@ const PropertyDetail = () => {
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d486.2386897099781!2d77.65770750100705!3d12.8491204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c9c77c6238f%3A0xcd1b6445631328ba!2sVelankani%20Tech%20Park!5e0!3m2!1sen!2sin!4v1750219662361!5m2!1sen!2sin";
       case 4:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30454.089215559827!2d78.30307971083982!3d17.4232464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb95555a030cc7%3A0xafac4281e3b5ce53!2sTHE%20DISTRICT!5e0!3m2!1sen!2sin!4v1750219877390!5m2!1sen!2sin";
+      case 5:
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15549.724180396484!2d80.24515557550966!3d13.00820005583947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267e8cdd9149b%3A0x8c9ab2b474e76fec!2s10%2C%20Besant%20Ave%20Rd%2C%20Arunachalapuram%2C%20Adyar%2C%20Chennai%2C%20Tamil%20Nadu%20600020!5e0!3m2!1sen!2sin!4v1750220088987!5m2!1sen!2sin";
       default:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2152227022907!2d72.83490287373584!3d19.05427265265725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c93cf21e4bad%3A0x4b1d874526889b1b!2s123%2C%20Hill%20Rd%2C%20Madam%20Wadi%2C%20Santosh%20Nagar%2C%20Bandra%20West%2C%20Mumbai%2C%20Maharashtra%20400050!5e0!3m2!1sen!2sin!4v1750218515029!5m2!1sen!2sin";
     }
@@ -57,6 +60,8 @@ const PropertyDetail = () => {
         return "Map location for Electronic City Bangalore";
       case 4:
         return "Map location for Gachibowli Hyderabad";
+      case 5:
+        return "Map location for Adyar Chennai";
       default:
         return `Map location for ${property?.title}`;
     }
