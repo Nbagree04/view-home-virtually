@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
@@ -30,6 +31,29 @@ const PropertyDetail = () => {
   const property = properties.find(p => p.id === propertyId);
   
   const [selectedImageIndex, setSelectedImageIndex] = React.useState(0);
+
+  // Generate map URL based on property ID
+  const getMapUrl = (propertyId: number) => {
+    switch (propertyId) {
+      case 1:
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2152227022907!2d72.83490287373584!3d19.05427265265725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c93cf21e4bad%3A0x4b1d874526889b1b!2s123%2C%20Hill%20Rd%2C%20Madam%20Wadi%2C%20Santosh%20Nagar%2C%20Bandra%20West%2C%20Mumbai%2C%20Maharashtra%20400050!5e0!3m2!1sen!2sin!4v1750218515029!5m2!1sen!2sin";
+      case 2:
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.4271539566735!2d72.82479647373684!3d19.088907951570096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9987d6e2511%3A0xaba7ac74e511e001!2s456%2C%20Juhu%20Tara%20Rd%2C%20Chandrabai%20Nagar%2C%20Juhu%2C%20Mumbai%2C%20Maharashtra%20400049!5e0!3m2!1sen!2sin!4v1750219359213!5m2!1sen!2sin";
+      default:
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2152227022907!2d72.83490287373584!3d19.05427265265725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c93cf21e4bad%3A0x4b1d874526889b1b!2s123%2C%20Hill%20Rd%2C%20Madam%20Wadi%2C%20Santosh%20Nagar%2C%20Bandra%20West%2C%20Mumbai%2C%20Maharashtra%20400050!5e0!3m2!1sen!2sin!4v1750218515029!5m2!1sen!2sin";
+    }
+  };
+
+  const getMapTitle = (propertyId: number) => {
+    switch (propertyId) {
+      case 1:
+        return "Map location for Bandra West Mumbai";
+      case 2:
+        return "Map location for Juhu Beach Mumbai";
+      default:
+        return `Map location for ${property?.title}`;
+    }
+  };
 
   if (!property) {
     return (
@@ -192,7 +216,7 @@ const PropertyDetail = () => {
                   <TabsContent value="map">
                     <div className="w-full rounded-lg overflow-hidden">
                       <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2152227022907!2d72.83490287373584!3d19.05427265265725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c93cf21e4bad%3A0x4b1d874526889b1b!2s123%2C%20Hill%20Rd%2C%20Madam%20Wadi%2C%20Santosh%20Nagar%2C%20Bandra%20West%2C%20Mumbai%2C%20Maharashtra%20400050!5e0!3m2!1sen!2sin!4v1750218515029!5m2!1sen!2sin"
+                        src={getMapUrl(propertyId)}
                         width="100%" 
                         height="400" 
                         style={{ border: 0 }} 
@@ -200,7 +224,7 @@ const PropertyDetail = () => {
                         loading="lazy" 
                         referrerPolicy="no-referrer-when-downgrade"
                         className="rounded-lg"
-                        title="Map location for Bandra West Mumbai"
+                        title={getMapTitle(propertyId)}
                       />
                     </div>
                   </TabsContent>
