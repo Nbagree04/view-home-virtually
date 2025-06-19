@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
@@ -52,6 +53,8 @@ const PropertyDetail = () => {
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1840.0912001135573!2d75.87786746398858!3d22.721460854349804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd1640000001%3A0xe20580f2dd7ce8f3!2sTreasure%20Island%20Mall%20(TI%20Mall)!5e0!3m2!1sen!2sin!4v1750314222436!5m2!1sen!2sin";
       case 9:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29027.976284272343!2d73.6584002875659!3d24.572037229107462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e56041553fe7%3A0xdfef96846886cdd0!2sLake%20Pichola!5e0!3m2!1sen!2sin!4v1750314905172!5m2!1sen!2sin";
+      case 10:
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125922.8652972511!2d76.19378504018204!3d9.500941518862994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0884f1aa296b61%3A0xb84764552c41f85a!2sAlappuzha%2C%20Kerala!5e0!3m2!1sen!2sin!4v1750315179559!5m2!1sen!2sin";
       default:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2152227022907!2d72.83490287373584!3d19.05427265265725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c93cf21e4bad%3A0x4b1d874526889b1b!2s123%2C%20Hill%20Rd%2C%20Madam%20Wadi%2C%20Santosh%20Nagar%2C%20Bandra%20West%2C%20Mumbai%2C%20Maharashtra%20400050!5e0!3m2!1sen!2sin!4v1750218515029!5m2!1sen!2sin";
     }
@@ -77,6 +80,8 @@ const PropertyDetail = () => {
         return "Map location for Palasia Indore";
       case 9:
         return "Map location for Lake Pichola Udaipur";
+      case 10:
+        return "Map location for Alappuzha Kerala";
       default:
         return `Map location for ${property?.title}`;
     }
