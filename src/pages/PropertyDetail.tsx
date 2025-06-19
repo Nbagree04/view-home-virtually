@@ -49,6 +49,8 @@ const PropertyDetail = () => {
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.8968420633173!2d77.2153750740943!3d28.63285368406859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37da3eabdf%3A0x627288b8deb49b8d!2sBlock%20A%2C%20Connaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1750220227332!5m2!1sen!2sin";
       case 7:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15554.308886689474!2d77.60983782522842!3d12.934872261404962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144559785d63%3A0x527726994bf1631e!2s5th%20Block%2C%20Koramangala%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1750313249641!5m2!1sen!2sin";
+      case 8:
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1840.0912001135573!2d75.87786746398858!3d22.721460854349804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd1640000001%3A0xe20580f2dd7ce8f3!2sTreasure%20Island%20Mall%20(TI%20Mall)!5e0!3m2!1sen!2sin!4v1750314222436!5m2!1sen!2sin";
       default:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2152227022907!2d72.83490287373584!3d19.05427265265725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c93cf21e4bad%3A0x4b1d874526889b1b!2s123%2C%20Hill%20Rd%2C%20Madam%20Wadi%2C%20Santosh%20Nagar%2C%20Bandra%20West%2C%20Mumbai%2C%20Maharashtra%20400050!5e0!3m2!1sen!2sin!4v1750218515029!5m2!1sen!2sin";
     }
@@ -70,6 +72,8 @@ const PropertyDetail = () => {
         return "Map location for Connaught Place New Delhi";
       case 7:
         return "Map location for Koramangala Bangalore";
+      case 8:
+        return "Map location for Palasia Indore";
       default:
         return `Map location for ${property?.title}`;
     }
