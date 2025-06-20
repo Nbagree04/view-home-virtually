@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
@@ -56,6 +57,8 @@ const PropertyDetail = () => {
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125922.8652972511!2d76.19378504018204!3d9.500941518862994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0884f1aa296b61%3A0xb84764552c41f85a!2sAlappuzha%2C%20Kerala!5e0!3m2!1sen!2sin!4v1750315179559!5m2!1sen!2sin";
       case 11:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7689.644650176676!2d73.82359038587424!3d15.493986329400544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc08583a30205%3A0xade68cd13f55ee7a!2sFontainhas%20(quarter)%2C%20Altinho%2C%20Panaji%2C%20Goa%20403001!5e0!3m2!1sen!2sin!4v1750395634218!5m2!1sen!2sin";
+      case 12:
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13666.785737026037!2d77.17163818520864!3d31.09037001612208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390578ba98db6e59%3A0xa9974ad076e4e60a!2sChotta%20Shimla%2C%20Shimla%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1750395934651!5m2!1sen!2sin";
       default:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2152227022907!2d72.83490287373584!3d19.05427265265725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c93cf21e4bad%3A0x4b1d874526889b1b!2s123%2C%20Hill%20Rd%2C%20Madam%20Wadi%2C%20Santosh%20Nagar%2C%20Bandra%20West%2C%20Mumbai%2C%20Maharashtra%20400050!5e0!3m2!1sen!2sin!4v1750218515029!5m2!1sen!2sin";
     }
@@ -85,6 +88,8 @@ const PropertyDetail = () => {
         return "Map location for Alappuzha Kerala";
       case 11:
         return "Map location for Fontainhas Panaji Goa";
+      case 12:
+        return "Map location for Chotta Shimla Himachal Pradesh";
       default:
         return `Map location for ${property?.title}`;
     }
