@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
@@ -283,16 +282,16 @@ const PropertyDetail = () => {
                 <BookingForm propertyId={property.id} />
               </div>
               
-              {/* Agent Info */}
+              {/* Agent Info - Updated with Nakul Bagree */}
               <div className="bg-white rounded-lg shadow-md p-6">
                 <div className="flex items-center mb-4">
                   <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
-                    alt="Agent"
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
+                    alt="Nakul Bagree"
                     className="w-16 h-16 rounded-full object-cover mr-4"
                   />
                   <div>
-                    <p className="font-bold text-realestate-blue">Michael Johnson</p>
+                    <p className="font-bold text-realestate-blue">Nakul Bagree</p>
                     <p className="text-sm text-realestate-gray">Listing Agent</p>
                   </div>
                 </div>
