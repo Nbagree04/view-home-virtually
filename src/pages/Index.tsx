@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -70,7 +68,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
-              <img alt="VR Experience" className="rounded-lg shadow-lg" src="/lovable-uploads/2a694fd7-7dac-44ac-a7c3-79aeb4171ee1.jpg" />
+              <img alt="VR Experience" className="rounded-lg shadow-lg" src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" />
             </div>
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold text-realestate-blue mb-4">
