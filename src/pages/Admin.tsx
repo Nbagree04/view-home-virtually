@@ -258,9 +258,12 @@ const Admin = () => {
                         <SelectContent>
                           <SelectItem value="Apartment">Apartment</SelectItem>
                           <SelectItem value="Villa">Villa</SelectItem>
+                          <SelectItem value="Bungalow">Bungalow</SelectItem>
+                          <SelectItem value="Penthouse">Penthouse</SelectItem>
+                          <SelectItem value="Cottage">Cottage</SelectItem>
+                          <SelectItem value="Studio">Studio</SelectItem>
                           <SelectItem value="Independent House">Independent House</SelectItem>
                           <SelectItem value="Builder Floor">Builder Floor</SelectItem>
-                          <SelectItem value="Penthouse">Penthouse</SelectItem>
                           <SelectItem value="Plot">Plot</SelectItem>
                           <SelectItem value="Commercial">Commercial</SelectItem>
                         </SelectContent>

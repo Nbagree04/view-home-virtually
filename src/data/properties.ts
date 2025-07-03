@@ -22,7 +22,9 @@ export const properties: Property[] = [
     images: [
       "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
     ],
     virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
     yearBuilt: 2020
@@ -37,7 +39,7 @@ export const properties: Property[] = [
     sqft: 3200,
     imageUrl: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
-    type: "House",
+    type: "Villa",
     address: "456 Juhu Tara Road, Juhu, Mumbai, Maharashtra 400049",
     description: "An exquisite villa with direct access to Juhu Beach. This property boasts panoramic sea views, a private pool, and luxurious interiors, making it a perfect seaside retreat.",
     features: ["Private Pool", "Sea View", "Italian Marble Flooring", "Home Theatre", "Landscaped Garden"],
@@ -45,7 +47,9 @@ export const properties: Property[] = [
     images: [
       "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1574873215043-40494b53b2b4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
     ],
     virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
     yearBuilt: 2018
@@ -68,14 +72,16 @@ export const properties: Property[] = [
     images: [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1493809842704-e142223a2a9a?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1599696848349-3c369e5c54a3?auto=format&fit=crop&w=800&q=80"
     ],
     virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
     yearBuilt: 2021
   },
   {
     id: 4,
-    title: "Contemporary Tech Hub Loft",
+    title: "Contemporary Tech Hub Penthouse",
     price: 17500000,
     location: "Gachibowli, Hyderabad",
     bedrooms: 2,
@@ -83,22 +89,24 @@ export const properties: Property[] = [
     sqft: 1850,
     imageUrl: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
-    type: "Apartment",
+    type: "Penthouse",
     address: "321 Financial District, Gachibowli, Hyderabad, Telangana 500032",
-    description: "A chic and stylish loft in Hyderabad's financial district. With double-height ceilings and industrial design touches, this property is perfect for those with a contemporary taste.",
+    description: "A chic and stylish penthouse in Hyderabad's financial district. With double-height ceilings and industrial design touches, this property is perfect for those with a contemporary taste.",
     features: ["Loft Design", "Rooftop Terrace", "24/7 Concierge", "Gym", "Community Hall"],
     nearby: ["Microsoft Campus (3 km)", "Amazon Campus (4 km)", "Inorbit Mall (5 km)"],
     images: [
       "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1560185007-c5ca9d2c015d?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1560185007-c5ca9d2c015d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1605276374104-5de67d608b8a?auto=format&fit=crop&w=800&q=80"
     ],
     virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
     yearBuilt: 2019
   },
   {
     id: 5,
-    title: "Spacious Family Villa",
+    title: "Spacious Family Bungalow",
     price: 21000000,
     location: "Adyar, Chennai, Tamil Nadu",
     bedrooms: 4,
@@ -106,15 +114,17 @@ export const properties: Property[] = [
     sqft: 3200,
     imageUrl: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
-    type: "House",
+    type: "Bungalow",
     address: "10 Besant Avenue, Adyar, Chennai, Tamil Nadu 600020",
-    description: "A large and welcoming villa in the serene neighborhood of Adyar. This home is perfect for a family, with a private garden, ample space, and proximity to top schools and parks.",
+    description: "A large and welcoming bungalow in the serene neighborhood of Adyar. This home is perfect for a family, with a private garden, ample space, and proximity to top schools and parks.",
     features: ["Private Garden", "Servant Quarters", "Solar Water Heater", "Rainwater Harvesting", "Children's Play Area"],
     nearby: ["IIT Madras (2 km)", "Besant Nagar Beach (3 km)", "Phoenix Marketcity (5 km)"],
     images: [
       "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1617806118233-5cf3b3a6b5a3?auto=format&fit=crop&w=800&q=80"
     ],
     virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
     yearBuilt: 2015
@@ -128,7 +138,7 @@ export const properties: Property[] = [
     bathrooms: 1,
     sqft: 850,
     imageUrl: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
-    hasVirtualTour: false,
+    hasVirtualTour: true,
     type: "Studio",
     address: "Block A, Connaught Place, New Delhi, Delhi 110001",
     description: "A compact and efficient studio apartment in the heart of Delhi's commercial center. It's the perfect urban pad for a single professional or a couple who loves the city buzz.",
@@ -137,7 +147,9 @@ export const properties: Property[] = [
     images: [
       "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1599696848349-3c369e5c54a3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1574873215043-40494b53b2b4?auto=format&fit=crop&w=800&q=80"
     ],
     virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
     yearBuilt: 2017
@@ -152,7 +164,7 @@ export const properties: Property[] = [
     sqft: 2800,
     imageUrl: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
-    type: "Apartment",
+    type: "Penthouse",
     address: "5th Block, Koramangala, Bengaluru, Karnataka 560095",
     description: "A luxurious penthouse in the trendy Koramangala area. This property features a private terrace garden and offers stunning views of the city's green cover.",
     features: ["Private Terrace", "Jacuzzi", "Double-height Living Room", "Designer Fittings"],
@@ -160,7 +172,9 @@ export const properties: Property[] = [
     images: [
       "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1605276374104-5de67d608b8a?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1493809842704-e142223a2a9a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=800&q=80"
     ],
     virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
     yearBuilt: 2019
@@ -183,14 +197,16 @@ export const properties: Property[] = [
     images: [
       "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80"
     ],
     virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
     yearBuilt: 2016
   },
   {
     id: 9,
-    title: 'Traditional Rajasthani Haveli',
+    title: 'Traditional Rajasthani Bungalow',
     price: 45000000,
     location: 'Udaipur, Rajasthan',
     bedrooms: 5,
@@ -198,15 +214,17 @@ export const properties: Property[] = [
     sqft: 4500,
     imageUrl: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80',
     hasVirtualTour: true,
-    type: 'House',
+    type: 'Bungalow',
     address: "Near Lake Pichola, Udaipur, Rajasthan 313001",
-    description: "Experience royal living in this beautifully restored traditional Haveli. Features intricate Rajasthani architecture, a central courtyard, and views of the historic city.",
+    description: "Experience royal living in this beautifully restored traditional bungalow. Features intricate Rajasthani architecture, a central courtyard, and views of the historic city.",
     features: ["Courtyard", "Jharokha Windows", "Heritage Architecture", "Rooftop Restaurant View", "Antique Furniture"],
     nearby: ["City Palace (1 km)", "Lake Pichola (0.5 km)", "Jagdish Temple (0.8 km)"],
     images: [
       "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1600585153492-bf72884399a2?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1574873215043-40494b53b2b4?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1574873215043-40494b53b2b4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1617806118233-5cf3b3a6b5a3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80"
     ],
     virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
     yearBuilt: 1850
@@ -221,7 +239,7 @@ export const properties: Property[] = [
     sqft: 2800,
     imageUrl: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80',
     hasVirtualTour: true,
-    type: 'House',
+    type: 'Villa',
     address: "Kainakkary, Alappuzha, Kerala 688501",
     description: "A tranquil retreat nestled by the serene backwaters of Kerala. This property offers a unique blend of traditional architecture and modern comforts, perfect for a peaceful lifestyle.",
     features: ["Backwater Frontage", "Traditional wooden architecture", "Ayurvedic Spa Room", "Canoe Dock"],
@@ -230,7 +248,8 @@ export const properties: Property[] = [
       "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1574873215043-40494b53b2b4?auto=format&fit=crop&w=800&q=80"
     ],
     virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
     yearBuilt: 2010
@@ -245,7 +264,7 @@ export const properties: Property[] = [
     sqft: 3500,
     imageUrl: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80',
     hasVirtualTour: true,
-    type: 'House',
+    type: 'Villa',
     address: "Fontainhas, Panaji, Goa 403001",
     description: "A charming Portuguese-style villa in the colorful Latin Quarter of Goa. This heritage property is full of character with its vibrant facade, balconies, and tiled roofs.",
     features: ["Portuguese Architecture", "Courtyard with Fountain", "Balcaos (Verandahs)", "Terracotta Roof Tiles"],
@@ -254,7 +273,8 @@ export const properties: Property[] = [
       "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1617806118233-5cf3b3a6b5a3?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1617806118233-5cf3b3a6b5a3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80"
     ],
     virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
     yearBuilt: 1950
@@ -268,8 +288,8 @@ export const properties: Property[] = [
     bathrooms: 2,
     sqft: 1800,
     imageUrl: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80',
-    hasVirtualTour: false,
-    type: 'House',
+    hasVirtualTour: true,
+    type: 'Cottage',
     address: "Chotta Shimla, Shimla, Himachal Pradesh 171002",
     description: "A cozy cottage nestled in the Himalayas. This property offers breathtaking mountain views, a warm fireplace, and a perfect escape from the hustle and bustle of city life.",
     features: ["Mountain View", "Fireplace", "Wooden Interiors", "Apple Orchard nearby"],
@@ -278,9 +298,260 @@ export const properties: Property[] = [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1574873215043-40494b53b2b4?auto=format&fit=crop&w=800&q=80"
     ],
     virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
     yearBuilt: 2005
   },
+  {
+    id: 13,
+    title: 'Luxury Riverfront Penthouse',
+    price: 180000000,
+    location: 'Powai, Mumbai',
+    bedrooms: 4,
+    bathrooms: 4,
+    sqft: 4200,
+    imageUrl: 'https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80',
+    hasVirtualTour: true,
+    type: 'Penthouse',
+    address: "Hiranandani Gardens, Powai, Mumbai, Maharashtra 400076",
+    description: "An ultra-luxury penthouse with panoramic views of Powai Lake. Features premium amenities, designer interiors, and world-class facilities in Mumbai's most prestigious location.",
+    features: ["Lake View", "Private Elevator", "Infinity Pool", "Wine Cellar", "Home Automation"],
+    nearby: ["Powai Lake (0.5 km)", "IIT Bombay (2 km)", "Hiranandani Hospital (1 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1605276374104-5de67d608b8a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560185007-c5ca9d2c015d?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2022
+  },
+  {
+    id: 14,
+    title: 'Colonial Heritage Bungalow',
+    price: 85000000,
+    location: 'Coonoor, Tamil Nadu',
+    bedrooms: 6,
+    bathrooms: 5,
+    sqft: 5500,
+    imageUrl: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80',
+    hasVirtualTour: true,
+    type: 'Bungalow',
+    address: "Wellington Road, Coonoor, Tamil Nadu 643101",
+    description: "A magnificent colonial-era bungalow set amidst tea plantations in the Nilgiris. This heritage property offers old-world charm with modern amenities and breathtaking hill views.",
+    features: ["Tea Estate Views", "Heritage Architecture", "Fireplace", "Wraparound Verandah", "Staff Quarters"],
+    nearby: ["Sim's Park (3 km)", "Dolphin's Nose (5 km)", "Tea Factory (2 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1617806118233-5cf3b3a6b5a3?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 1920
+  },
+  {
+    id: 15,
+    title: 'Modern Eco-Friendly Villa',
+    price: 95000000,
+    location: 'Whitefield, Bengaluru',
+    bedrooms: 5,
+    bathrooms: 4,
+    sqft: 4800,
+    imageUrl: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80',
+    hasVirtualTour: true,
+    type: 'Villa',
+    address: "ITPL Main Road, Whitefield, Bengaluru, Karnataka 560066",
+    description: "A state-of-the-art eco-friendly villa with sustainable features and modern architecture. Perfect for environmentally conscious families seeking luxury living.",
+    features: ["Solar Panels", "Rainwater Harvesting", "Organic Garden", "Smart Home Technology", "EV Charging Point"],
+    nearby: ["ITPL (1 km)", "Phoenix Marketcity (3 km)", "Whitefield Railway Station (2 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1617806118233-5cf3b3a6b5a3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2023
+  },
+  {
+    id: 16,
+    title: 'Luxury Golf Course Apartment',
+    price: 75000000,
+    location: 'Gurgaon, Haryana',
+    bedrooms: 3,
+    bathrooms: 3,
+    sqft: 2900,
+    imageUrl: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80',
+    hasVirtualTour: true,
+    type: 'Apartment',
+    address: "DLF Golf Course Road, Gurgaon, Haryana 122002",
+    description: "An exclusive apartment overlooking the prestigious DLF Golf Course. This property offers resort-style living with world-class amenities and unparalleled luxury.",
+    features: ["Golf Course View", "Concierge Service", "Spa & Wellness Center", "Valet Parking", "Private Balcony"],
+    nearby: ["DLF Golf Course (0 km)", "Cyber Hub (2 km)", "Ambience Mall (3 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2021
+  },
+  {
+    id: 17,
+    title: 'Beachfront Luxury Penthouse',
+    price: 150000000,
+    location: 'Baga Beach, Goa',
+    bedrooms: 4,
+    bathrooms: 4,
+    sqft: 3800,
+    imageUrl: 'https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80',
+    hasVirtualTour: true,
+    type: 'Penthouse',
+    address: "Baga Beach Road, North Goa, Goa 403516",
+    description: "A stunning beachfront penthouse with direct beach access and panoramic ocean views. This property epitomizes luxury coastal living with world-class amenities.",
+    features: ["Direct Beach Access", "Ocean View", "Private Pool", "Outdoor Kitchen", "Sunset Deck"],
+    nearby: ["Baga Beach (0 km)", "Calangute Beach (2 km)", "Anjuna Flea Market (5 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1605276374104-5de67d608b8a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2020
+  },
+  {
+    id: 18,
+    title: 'Historic Havelock Bungalow',
+    price: 65000000,
+    location: 'Havelock Island, Andaman',
+    bedrooms: 3,
+    bathrooms: 3,
+    sqft: 2600,
+    imageUrl: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80',
+    hasVirtualTour: true,
+    type: 'Bungalow',
+    address: "Radhanagar Beach, Havelock Island, Andaman 744211",
+    description: "A secluded island bungalow on pristine Havelock Island. This property offers unparalleled privacy and natural beauty, perfect for those seeking an island retreat.",
+    features: ["Beachfront Location", "Private Jetty", "Tropical Gardens", "Solar Power", "Coral Reef Views"],
+    nearby: ["Radhanagar Beach (0.5 km)", "Elephant Beach (3 km)", "Kalapathar Beach (5 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1617806118233-5cf3b3a6b5a3?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2018
+  },
+  {
+    id: 19,
+    title: 'Metropolitan Sky Villa',
+    price: 120000000,
+    location: 'Worli, Mumbai',
+    bedrooms: 5,
+    bathrooms: 5,
+    sqft: 4500,
+    imageUrl: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80',
+    hasVirtualTour: true,
+    type: 'Villa',
+    address: "Worli Sea Face, Mumbai, Maharashtra 400030",
+    description: "A magnificent sky villa with breathtaking views of the Arabian Sea and Mumbai skyline. This property combines luxury living with prime urban location.",
+    features: ["Sea View", "Sky Terrace", "Private Elevator", "Infinity Pool", "Butler Service"],
+    nearby: ["Worli Sea Face (0 km)", "Bandra-Worli Sea Link (1 km)", "Atria Mall (2 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1617806118233-5cf3b3a6b5a3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2022
+  },
+  {
+    id: 20,
+    title: 'Art Deco Penthouse',
+    price: 200000000,
+    location: 'Marine Drive, Mumbai',
+    bedrooms: 4,
+    bathrooms: 4,
+    sqft: 4000,
+    imageUrl: 'https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80',
+    hasVirtualTour: true,
+    type: 'Penthouse',
+    address: "Marine Drive, Mumbai, Maharashtra 400020",
+    description: "An iconic Art Deco penthouse on Mumbai's famous Marine Drive. This heritage property offers timeless elegance with modern luxury and unobstructed ocean views.",
+    features: ["Heritage Building", "Marine Drive Views", "Art Deco Architecture", "Rooftop Garden", "Antique Fixtures"],
+    nearby: ["Marine Drive Promenade (0 km)", "Chowpatty Beach (1 km)", "Nariman Point (2 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1605276374104-5de67d608b8a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560185007-c5ca9d2c015d?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 1940
+  },
+  {
+    id: 21,
+    title: 'Lakeside Luxury Cottage',
+    price: 55000000,
+    location: 'Nainital, Uttarakhand',
+    bedrooms: 3,
+    bathrooms: 3,
+    sqft: 2400,
+    imageUrl: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80',
+    hasVirtualTour: true,
+    type: 'Cottage',
+    address: "Mallital, Nainital, Uttarakhand 263002",
+    description: "A charming lakeside cottage with panoramic views of Naini Lake. This property offers a perfect blend of hill station charm and modern amenities.",
+    features: ["Lake View", "Mountain Setting", "Wooden Interiors", "Private Garden", "Boat House Access"],
+    nearby: ["Naini Lake (0.2 km)", "Mall Road (0.5 km)", "Snow View Point (2 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1574873215043-40494b53b2b4?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2019
+  },
+  {
+    id: 22,
+    title: 'Royal Palace Apartment',
+    price: 110000000,
+    location: 'Jaipur, Rajasthan',
+    bedrooms: 4,
+    bathrooms: 4,
+    sqft: 3600,
+    imageUrl: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80',
+    hasVirtualTour: true,
+    type: 'Apartment',
+    address: "C-Scheme, Jaipur, Rajasthan 302005",
+    description: "A regal apartment inspired by Rajasthani palace architecture. This property features intricate craftsmanship, royal amenities, and modern luxury in the Pink City.",
+    features: ["Royal Architecture", "Marble Flooring", "Jharokha Balconies", "Courtyard View", "Heritage Design"],
+    nearby: ["Hawa Mahal (3 km)", "City Palace (4 km)", "Jantar Mantar (3.5 km)"],
+    images: [
+      "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
+    ],
+    virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    yearBuilt: 2021
+  }
 ];
