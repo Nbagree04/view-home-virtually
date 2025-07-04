@@ -45,11 +45,11 @@ const PropertyDetail = () => {
       case 5:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15549.724180396484!2d80.24515557550966!3d13.00820005583947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267e8cdd9149b%3A0x8c9ab2b474e76fec!2s10%2C%20Besant%20Ave%20Rd%2C%20Arunachalapuram%2C%20Adyar%2C%20Chennai%2C%20Tamil%20Nadu%20600020!5e0!3m2!1sen!2sin!4v1750220088987!5m2!1sen!2sin";
       case 6:
-        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.8968420633173!2d77.2153750740943!3d28.63285368406859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37da3eabdf%3A0x627288b8deb49b8d!2sBlock%20A%2C%20Connaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1750220227332!5m2!1sen!2sin";
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.55048133515!2d77.20148397409474!3d28.643231683597275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5d13d37149%3A0x20f6d1c4f1bd6d7!2sTOWER-A%2C%20CENTRAL%20GOVERNMENT%20EMPLOYEES%20HOUSING%20COMPLEX%2C%20Type%204%2C%20Block%20B%2C%20Aram%20Bagh%2C%20Jhandewalan%2C%20New%20Delhi%2C%20Delhi%20110055!5e0!3m2!1sen!2sin!4v1751606225750!5m2!1sen!2sin";
       case 7:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15554.308886689474!2d77.60983782522842!3d12.934872261404962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144559785d63%3A0x527726994bf1631e!2s5th%20Block%2C%20Koramangala%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1750313249641!5m2!1sen!2sin";
       case 8:
-        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1840.0912001135573!2d75.87786746398858!3d22.721460854349804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd1640000001%3A0xe20580f2dd7ce8f3!2sTreasure%20Island%20Mall%20(TI%20Mall)!5e0!3m2!1sen!2sin!4v1750314222436!5m2!1sen!2sin";
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.3860121539983!2d75.89700867385612!3d22.75105162640899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396302aaac34d513%3A0x44b14477192e12e6!2s15%2C%20Vijay%20Nagar%2C%20Ganga%20Devi%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh%20452010!5e0!3m2!1sen!2sin!4v1751606160466!5m2!1sen!2sin";
       case 9:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29027.976284272343!2d73.6584002875659!3d24.572037229107462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e56041553fe7%3A0xdfef96846886cdd0!2sLake%20Pichola!5e0!3m2!1sen!2sin!4v1750314905172!5m2!1sen!2sin";
       case 10:
@@ -58,6 +58,8 @@ const PropertyDetail = () => {
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7689.644650176676!2d73.82359038587424!3d15.493986329400544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc08583a30205%3A0xade68cd13f55ee7a!2sFontainhas%20(quarter)%2C%20Altinho%2C%20Panaji%2C%20Goa%20403001!5e0!3m2!1sen!2sin!4v1750395634218!5m2!1sen!2sin";
       case 12:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13666.785737026037!2d77.17163818520864!3d31.09037001612208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390578ba98db6e59%3A0xa9974ad076e4e60a!2sChotta%20Shimla%2C%20Shimla%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1750395934651!5m2!1sen!2sin";
+      case 13:
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.903441932272!2d73.91037217372075!3d18.533265068789294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c19ff08dd255%3A0xa46125156bd5608a!2sLn%20V%2C%20Koregaon%20Park%20Annexe%2C%20Mundhwa%2C%20Pune%2C%20Maharashtra%20411036!5e0!3m2!1sen!2sin!4v1751606368221!5m2!1sen!2sin";
       default:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2152227022907!2d72.83490287373584!3d19.05427265265725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c93cf21e4bad%3A0x4b1d874526889b1b!2s123%2C%20Hill%20Rd%2C%20Madam%20Wadi%2C%20Santosh%20Nagar%2C%20Bandra%20West%2C%20Mumbai%2C%20Maharashtra%20400050!5e0!3m2!1sen!2sin!4v1750218515029!5m2!1sen!2sin";
     }
@@ -89,6 +91,8 @@ const PropertyDetail = () => {
         return "Map location for Fontainhas Panaji Goa";
       case 12:
         return "Map location for Chotta Shimla Himachal Pradesh";
+      case 13:
+        return "Map location for Koregaon Park Pune";
       default:
         return `Map location for ${property?.title}`;
     }
