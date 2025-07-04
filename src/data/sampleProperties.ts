@@ -1,4 +1,3 @@
-
 import { PropertyProps } from "@/components/PropertyCard";
 
 export const sampleProperties: PropertyProps[] = [
@@ -128,7 +127,7 @@ export const sampleProperties: PropertyProps[] = [
     bedrooms: 2,
     bathrooms: 2,
     sqft: 1400,
-    imageUrl: "https://images.unsplash.com/photo-1493809842704-e142223a2a9a?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "Apartment",
     address: "Cyber Towers, HITEC City, Hyderabad, Telangana 500081",
@@ -136,7 +135,7 @@ export const sampleProperties: PropertyProps[] = [
     features: ["Swimming Pool", "Gym", "24/7 Security", "Power Backup", "Covered Parking"],
     nearby: ["Microsoft Campus (1 km)", "Google Office (2 km)", "Inorbit Mall (3 km)"],
     images: [
-      "https://images.unsplash.com/photo-1493809842704-e142223a2a9a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1560448204-61dc36dc98c8?auto=format&fit=crop&w=800&q=80"
     ],
     virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
@@ -380,21 +379,21 @@ export const sampleProperties: PropertyProps[] = [
   },
   {
     id: 18,
-    title: "Commercial Plot",
+    title: "Family Home",
     price: 15000000,
     location: "Cyber City, Gurgaon",
-    bedrooms: 0,
-    bathrooms: 0,
+    bedrooms: 3,
+    bathrooms: 3,
     sqft: 2000,
-    imageUrl: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: false,
-    type: "Plot",
+    type: "Independent House",
     address: "DLF Cyber City, Gurgaon, Haryana 122002",
-    description: "Prime commercial plot in prestigious Cyber City for development opportunities.",
-    features: ["Corner Plot", "High FSI", "Metro Connectivity", "IT Hub", "Investment Grade"],
+    description: "Beautiful family home in prestigious Cyber City with modern amenities and great connectivity.",
+    features: ["Modern Design", "Garden", "Parking", "Security", "Prime Location"],
     nearby: ["DLF Cyber Hub (0.5 km)", "Rapid Metro (0.2 km)", "Ambience Mall (1 km)"],
     images: [
-      "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
     ],
     yearBuilt: 2023
@@ -407,7 +406,7 @@ export const sampleProperties: PropertyProps[] = [
     bedrooms: 3,
     bathrooms: 2,
     sqft: 1800,
-    imageUrl: "https://images.unsplash.com/photo-1599696848349-3c369e5c54a3?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "Apartment",
     address: "Ulsoor Lake Road, Bengaluru, Karnataka 560008",
@@ -415,7 +414,7 @@ export const sampleProperties: PropertyProps[] = [
     features: ["Lake View", "Central Location", "Gym", "Swimming Pool", "Garden"],
     nearby: ["Ulsoor Lake (0.1 km)", "Commercial Street (2 km)", "Trinity Metro (1 km)"],
     images: [
-      "https://images.unsplash.com/photo-1599696848349-3c369e5c54a3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
     ],
     virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
@@ -429,7 +428,7 @@ export const sampleProperties: PropertyProps[] = [
     bedrooms: 6,
     bathrooms: 4,
     sqft: 4200,
-    imageUrl: "https://images.unsplash.com/photo-1574873215043-40494b53b2b4?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?auto=format&fit=crop&w=800&q=80",
     hasVirtualTour: true,
     type: "Independent House",
     address: "Civil Lines, Jaipur, Rajasthan 302006",
@@ -437,7 +436,7 @@ export const sampleProperties: PropertyProps[] = [
     features: ["Heritage Architecture", "Courtyard", "Traditional Design", "Large Rooms", "Cultural Value"],
     nearby: ["City Palace (3 km)", "Hawa Mahal (2 km)", "Jantar Mantar (2.5 km)"],
     images: [
-      "https://images.unsplash.com/photo-1574873215043-40494b53b2b4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1460574283810-2aab119d8511?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"
     ],
     virtualTourUrl: "https://www.youtube.com/embed/aqz-KE-bpKQ",
