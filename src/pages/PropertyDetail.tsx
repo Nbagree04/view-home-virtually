@@ -41,7 +41,7 @@ const PropertyDetail = () => {
       case 3:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d486.2386897099781!2d77.65770750100705!3d12.8491204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c9c77c6238f%3A0xcd1b6445631328ba!2sVelankani%20Tech%20Park!5e0!3m2!1sen!2sin!4v1750219662361!5m2!1sen!2sin";
       case 4:
-        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30454.089215559827!2d78.30307971083982!3d17.4232464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb95555a030cc7%3A0xafac4281e3b5ce53!2sTHE%20DISTRICT!5e0!3m2!1sen!2sin!4v1750219877390!5m2!1sen!2sin";
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2272899860895!2d78.37575612369088!3d17.44883210103498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb930036e02df5%3A0xafd92e6778539645!2sCyber%20Towers%20-%20HITEC%20City!5e0!3m2!1sen!2sin!4v1751606449479!5m2!1sen!2sin";
       case 5:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15549.724180396484!2d80.24515557550966!3d13.00820005583947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267e8cdd9149b%3A0x8c9ab2b474e76fec!2s10%2C%20Besant%20Ave%20Rd%2C%20Arunachalapuram%2C%20Adyar%2C%20Chennai%2C%20Tamil%20Nadu%20600020!5e0!3m2!1sen!2sin!4v1750220088987!5m2!1sen!2sin";
       case 6:
@@ -60,6 +60,8 @@ const PropertyDetail = () => {
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13666.785737026037!2d77.17163818520864!3d31.09037001612208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390578ba98db6e59%3A0xa9974ad076e4e60a!2sChotta%20Shimla%2C%20Shimla%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1750395934651!5m2!1sen!2sin";
       case 13:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.903441932272!2d73.91037217372075!3d18.533265068789294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c19ff08dd255%3A0xa46125156bd5608a!2sLn%20V%2C%20Koregaon%20Park%20Annexe%2C%20Mundhwa%2C%20Pune%2C%20Maharashtra%20411036!5e0!3m2!1sen!2sin!4v1751606368221!5m2!1sen!2sin";
+      case 23:
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15693.489071771754!2d79.55690527094151!3d10.471291169799255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a530891a6bce1e5%3A0xca50255e35489f22!2sSH%2049!5e0!3m2!1sen!2sin!4v1751606511915!5m2!1sen!2sin";
       default:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2152227022907!2d72.83490287373584!3d19.05427265265725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c93cf21e4bad%3A0x4b1d874526889b1b!2s123%2C%20Hill%20Rd%2C%20Madam%20Wadi%2C%20Santosh%20Nagar%2C%20Bandra%20West%2C%20Mumbai%2C%20Maharashtra%20400050!5e0!3m2!1sen!2sin!4v1750218515029!5m2!1sen!2sin";
     }
@@ -74,7 +76,7 @@ const PropertyDetail = () => {
       case 3:
         return "Map location for Electronic City Bangalore";
       case 4:
-        return "Map location for Gachibowli Hyderabad";
+        return "Map location for HITEC City Hyderabad";
       case 5:
         return "Map location for Adyar Chennai";
       case 6:
@@ -93,6 +95,8 @@ const PropertyDetail = () => {
         return "Map location for Chotta Shimla Himachal Pradesh";
       case 13:
         return "Map location for Koregaon Park Pune";
+      case 23:
+        return "Map location for East Coast Road Chennai";
       default:
         return `Map location for ${property?.title}`;
     }
