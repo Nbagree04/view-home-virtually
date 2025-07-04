@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,7 +8,7 @@ import { properties } from "@/data/properties";
 
 const PropertyListings = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [priceRange, setPriceRange] = useState([10000000, 100000000]);
+  const [priceRange, setPriceRange] = useState([5000000, 150000000]); // Updated range: 50 lakhs to 15 crores
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [minBedrooms, setMinBedrooms] = useState<number>(0);
   const [virtualTourOnly, setVirtualTourOnly] = useState(false);

@@ -35,8 +35,9 @@ const FiltersSidebar: React.FC<FiltersSidebarProps> = ({
           <Label className="block mb-2">Price Range</Label>
           <Slider 
             defaultValue={priceRange} 
-            max={100000000} 
-            step={1000000} 
+            max={150000000} 
+            min={5000000}
+            step={500000} 
             onValueChange={setPriceRange}
           />
           <div className="flex justify-between mt-2 text-sm text-realestate-gray">
