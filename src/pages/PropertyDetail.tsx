@@ -48,8 +48,6 @@ const PropertyDetail = () => {
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.55048133515!2d77.20148397409474!3d28.643231683597275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5d13d37149%3A0x20f6d1c4f1bd6d7!2sTOWER-A%2C%20CENTRAL%20GOVERNMENT%20EMPLOYEES%20HOUSING%20COMPLEX%2C%20Type%204%2C%20Block%20B%2C%20Aram%20Bagh%2C%20Jhandewalan%2C%20New%20Delhi%2C%20Delhi%20110055!5e0!3m2!1sen!2sin!4v1751606225750!5m2!1sen!2sin";
       case 7:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15554.308886689474!2d77.60983782522842!3d12.934872261404962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144559785d63%3A0x527726994bf1631e!2s5th%20Block%2C%20Koramangala%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1750313249641!5m2!1sen!2sin";
-      case 8:
-        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.3860121539983!2d75.89700867385612!3d22.75105162640899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396302aaac34d513%3A0x44b14477192e12e6!2s15%2C%20Vijay%20Nagar%2C%20Ganga%20Devi%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh%20452010!5e0!3m2!1sen!2sin!4v1751606160466!5m2!1sen!2sin";
       case 9:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29027.976284272343!2d73.6584002875659!3d24.572037229107462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e56041553fe7%3A0xdfef96846886cdd0!2sLake%20Pichola!5e0!3m2!1sen!2sin!4v1750314905172!5m2!1sen!2sin";
       case 10:
@@ -63,7 +61,7 @@ const PropertyDetail = () => {
       case 23:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15693.489071771754!2d79.55690527094151!3d10.471291169799255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a530891a6bce1e5%3A0xca50255e35489f22!2sSH%2049!5e0!3m2!1sen!2sin!4v1751606511915!5m2!1sen!2sin";
       default:
-        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2152227022907!2d72.83490287373584!3d19.05427265265725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c93cf21e4bad%3A0x4b1d874526889b1b!2s123%2C%20Hill%20Rd%2C%20Madam%20Wadi%2C%20Santosh%20Nagar%2C%20Bandra%20West%2C%20Mumbai%2C%20Maharashtra%20400050!5e0!3m2!1sen!2sin!4v1750218515029!5m2!1sen!2sin";
+        return null;
     }
   };
 
@@ -83,8 +81,6 @@ const PropertyDetail = () => {
         return "Map location for Connaught Place New Delhi";
       case 7:
         return "Map location for Koramangala Bangalore";
-      case 8:
-        return "Map location for Palasia Indore";
       case 9:
         return "Map location for Lake Pichola Udaipur";
       case 10:
@@ -114,6 +110,8 @@ const PropertyDetail = () => {
       </div>
     );
   }
+
+  const mapUrl = getMapUrl(propertyId);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -262,17 +260,26 @@ const PropertyDetail = () => {
                   
                   <TabsContent value="map">
                     <div className="w-full rounded-lg overflow-hidden">
-                      <iframe 
-                        src={getMapUrl(propertyId)}
-                        width="100%" 
-                        height="400" 
-                        style={{ border: 0 }} 
-                        allowFullScreen 
-                        loading="lazy" 
-                        referrerPolicy="no-referrer-when-downgrade"
-                        className="rounded-lg"
-                        title={getMapTitle(propertyId)}
-                      />
+                      {mapUrl ? (
+                        <iframe 
+                          src={mapUrl}
+                          width="100%" 
+                          height="400" 
+                          style={{ border: 0 }} 
+                          allowFullScreen 
+                          loading="lazy" 
+                          referrerPolicy="no-referrer-when-downgrade"
+                          className="rounded-lg"
+                          title={getMapTitle(propertyId)}
+                        />
+                      ) : (
+                        <div className="flex items-center justify-center h-96 bg-gray-100 rounded-lg">
+                          <div className="text-center">
+                            <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-2" />
+                            <p className="text-gray-500">Map not available for this property</p>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </TabsContent>
                 </Tabs>
