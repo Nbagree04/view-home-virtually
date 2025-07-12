@@ -44,8 +44,6 @@ const PropertyDetail = () => {
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2272899860895!2d78.37575612369088!3d17.44883210103498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb930036e02df5%3A0xafd92e6778539645!2sCyber%20Towers%20-%20HITEC%20City!5e0!3m2!1sen!2sin!4v1751606449479!5m2!1sen!2sin";
       case 5:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15549.724180396484!2d80.24515557550966!3d13.00820005583947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267e8cdd9149b%3A0x8c9ab2b474e76fec!2s10%2C%20Besant%20Ave%20Rd%2C%20Arunachalapuram%2C%20Adyar%2C%20Chennai%2C%20Tamil%20Nadu%20600020!5e0!3m2!1sen!2sin!4v1750220088987!5m2!1sen!2sin";
-      case 6:
-        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.55048133515!2d77.20148397409474!3d28.643231683597275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5d13d37149%3A0x20f6d1c4f1bd6d7!2sTOWER-A%2C%20CENTRAL%20GOVERNMENT%20EMPLOYEES%20HOUSING%20COMPLEX%2C%20Type%204%2C%20Block%20B%2C%20Aram%20Bagh%2C%20Jhandewalan%2C%20New%20Delhi%2C%20Delhi%20110055!5e0!3m2!1sen!2sin!4v1751606225750!5m2!1sen!2sin";
       case 7:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15554.308886689474!2d77.60983782522842!3d12.934872261404962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144559785d63%3A0x527726994bf1631e!2s5th%20Block%2C%20Koramangala%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1750313249641!5m2!1sen!2sin";
       case 8:
@@ -79,8 +77,6 @@ const PropertyDetail = () => {
         return "Map location for HITEC City Hyderabad";
       case 5:
         return "Map location for Adyar Chennai";
-      case 6:
-        return "Map location for Connaught Place New Delhi";
       case 7:
         return "Map location for Koramangala Bangalore";
       case 8:
