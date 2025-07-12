@@ -48,6 +48,8 @@ const PropertyDetail = () => {
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.55048133515!2d77.20148397409474!3d28.643231683597275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5d13d37149%3A0x20f6d1c4f1bd6d7!2sTOWER-A%2C%20CENTRAL%20GOVERNMENT%20EMPLOYEES%20HOUSING%20COMPLEX%2C%20Type%204%2C%20Block%20B%2C%20Aram%20Bagh%2C%20Jhandewalan%2C%20New%20Delhi%2C%20Delhi%20110055!5e0!3m2!1sen!2sin!4v1751606225750!5m2!1sen!2sin";
       case 7:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15554.308886689474!2d77.60983782522842!3d12.934872261404962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144559785d63%3A0x527726994bf1631e!2s5th%20Block%2C%20Koramangala%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1750313249641!5m2!1sen!2sin";
+      case 8:
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.5705019601746!2d75.89170507385585!3d22.74419992666183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd53ff7ae03f%3A0x1235bfe921216a08!2sC21%20Mall%2C%2015%2C%20Vijay%20Nagar%2C%20Scheme%2054%20PU4%2C%20Indore%2C%20Madhya%20Pradesh%20452010!5e0!3m2!1sen!2sin!4v1752289108735!5m2!1sen!2sin";
       case 9:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29027.976284272343!2d73.6584002875659!3d24.572037229107462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e56041553fe7%3A0xdfef96846886cdd0!2sLake%20Pichola!5e0!3m2!1sen!2sin!4v1750314905172!5m2!1sen!2sin";
       case 10:
@@ -81,6 +83,8 @@ const PropertyDetail = () => {
         return "Map location for Connaught Place New Delhi";
       case 7:
         return "Map location for Koramangala Bangalore";
+      case 8:
+        return "Map location for C21 Mall Vijay Nagar Indore";
       case 9:
         return "Map location for Lake Pichola Udaipur";
       case 10:
