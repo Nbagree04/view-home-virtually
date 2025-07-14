@@ -42,6 +42,8 @@ const PropertyDetail = () => {
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15559.638070719298!2d77.64026485541994!3d12.8491204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c9c77c6238f%3A0xcd1b6445631328ba!2sVelankani%20Tech%20Park!5e0!3m2!1sen!2sin!4v1752467118347!5m2!1sen!2sin";
       case 4:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.3860121539983!2d75.8970086738561!3d22.751051626408977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396302aaac34d513%3A0x44b14477192e12e6!2s15%2C%20Vijay%20Nagar%2C%20Ganga%20Devi%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh%20452010!5e0!3m2!1sen!2sin!4v1752467197072!5m2!1sen!2sin";
+      case 5:
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.55048133515!2d77.20148397409474!3d28.643231683597275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5d13d37149%3A0x20f6d1c4f1bd6d7!2sTOWER-A%2C%20CENTRAL%20GOVERNMENT%20EMPLOYEES%20HOUSING%20COMPLEX%2C%20Type%204%2C%20Block%20B%2C%20Aram%20Bagh%2C%20Jhandewalan%2C%20New%20Delhi%2C%20Delhi%20110055!5e0!3m2!1sen!2sin!4v1752467488162!5m2!1sen!2sin";
       default:
         return null;
     }
