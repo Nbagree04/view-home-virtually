@@ -40,6 +40,8 @@ const PropertyDetail = () => {
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.4271539566735!2d72.82479647373684!3d19.088907951570096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9987d6e2511%3A0xaba7ac74e511e001!2s456%2C%20Juhu%20Tara%20Rd%2C%20Chandrabai%20Nagar%2C%20Juhu%2C%20Mumbai%2C%20Maharashtra%20400049!5e0!3m2!1sen!2sin!4v1752467001091!5m2!1sen!2sin";
       case 3:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15559.638070719298!2d77.64026485541994!3d12.8491204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c9c77c6238f%3A0xcd1b6445631328ba!2sVelankani%20Tech%20Park!5e0!3m2!1sen!2sin!4v1752467118347!5m2!1sen!2sin";
+      case 8:
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.3860121539983!2d75.8970086738561!3d22.751051626408977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396302aaac34d513%3A0x44b14477192e12e6!2s15%2C%20Vijay%20Nagar%2C%20Ganga%20Devi%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh%20452010!5e0!3m2!1sen!2sin!4v1752467197072!5m2!1sen!2sin";
       default:
         return null;
     }
