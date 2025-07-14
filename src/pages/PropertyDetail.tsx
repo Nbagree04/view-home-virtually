@@ -31,9 +31,14 @@ const PropertyDetail = () => {
   
   const [selectedImageIndex, setSelectedImageIndex] = React.useState(0);
 
-  // Generate map URL based on property ID - now returns null for all properties
+  // Generate map URL based on property ID
   const getMapUrl = (propertyId: number) => {
-    return null;
+    switch (propertyId) {
+      case 1:
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2152227022907!2d72.83490287373584!3d19.05427265265725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c93cf21e4bad%3A0x4b1d874526889b1b!2s123%2C%20Hill%20Rd%2C%20Madam%20Wadi%2C%20Santosh%20Nagar%2C%20Bandra%20West%2C%20Mumbai%2C%20Maharashtra%20400050!5e0!3m2!1sen!2sin!4v1752466924270!5m2!1sen!2sin";
+      default:
+        return null;
+    }
   };
 
   const getMapTitle = (propertyId: number) => {
