@@ -46,6 +46,8 @@ const PropertyDetail = () => {
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.55048133515!2d77.20148397409474!3d28.643231683597275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5d13d37149%3A0x20f6d1c4f1bd6d7!2sTOWER-A%2C%20CENTRAL%20GOVERNMENT%20EMPLOYEES%20HOUSING%20COMPLEX%2C%20Type%204%2C%20Block%20B%2C%20Aram%20Bagh%2C%20Jhandewalan%2C%20New%20Delhi%2C%20Delhi%20110055!5e0!3m2!1sen!2sin!4v1752467488162!5m2!1sen!2sin";
       case 6:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2272899860895!2d78.37575612369088!3d17.44883210103498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb930036e02df5%3A0xafd92e6778539645!2sCyber%20Towers%20-%20HITEC%20City!5e0!3m2!1sen!2sin!4v1752467776528!5m2!1sen!2sin";
+      case 13:
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.903441932272!2d73.91037217372075!3d18.533265068789294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c19ff08dd255%3A0xa46125156bd5608a!2sLn%20V%2C%20Koregaon%20Park%20Annexe%2C%20Mundhwa%2C%20Pune%2C%20Maharashtra%20411036!5e0!3m2!1sen!2sin!4v1752562988313!5m2!1sen!2sin";
       default:
         return null;
     }
