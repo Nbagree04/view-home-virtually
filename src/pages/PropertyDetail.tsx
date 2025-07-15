@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
@@ -48,6 +49,8 @@ const PropertyDetail = () => {
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2272899860895!2d78.37575612369088!3d17.44883210103498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb930036e02df5%3A0xafd92e6778539645!2sCyber%20Towers%20-%20HITEC%20City!5e0!3m2!1sen!2sin!4v1752467776528!5m2!1sen!2sin";
       case 7:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.903441932272!2d73.91037217372075!3d18.533265068789294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c19ff08dd255%3A0xa46125156bd5608a!2sLn%20V%2C%20Koregaon%20Park%20Annexe%2C%20Mundhwa%2C%20Pune%2C%20Maharashtra%20411036!5e0!3m2!1sen!2sin!4v1752562988313!5m2!1sen!2sin";
+      case 8:
+        return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15693.489071771754!2d79.55690527094151!3d10.471291169799255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a530891a6bce1e5%3A0xca50255e35489f22!2sSH%2049!5e0!3m2!1sen!2sin!4v1752563207207!5m2!1sen!2sin";
       case 13:
         return "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.903441932272!2d73.91037217372075!3d18.533265068789294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c19ff08dd255%3A0xa46125156bd5608a!2sLn%20V%2C%20Koregaon%20Park%20Annexe%2C%20Mundhwa%2C%20Pune%2C%20Maharashtra%20411036!5e0!3m2!1sen!2sin!4v1752562988313!5m2!1sen!2sin";
       default:
@@ -72,7 +75,7 @@ const PropertyDetail = () => {
       case 7:
         return "Map location for Koregaon Park Pune";
       case 8:
-        return "Map location for C21 Mall Vijay Nagar Indore";
+        return "Map location for ECR Chennai";
       case 9:
         return "Map location for Lake Pichola Udaipur";
       case 10:
