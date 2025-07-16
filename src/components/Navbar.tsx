@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Home, Menu, X, User, LogOut, Shield } from "lucide-react";
+import { Home, Menu, X, User, LogOut, Shield, HelpCircle } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 
 const Navbar = () => {
@@ -39,6 +39,9 @@ const Navbar = () => {
           </Link>
           <Link to="/contact" className="text-realestate-gray hover:text-realestate-blue transition-colors">
             Contact
+          </Link>
+          <Link to="/help" className="text-realestate-gray hover:text-realestate-blue transition-colors">
+            Help
           </Link>
           
           {user ? (
@@ -117,6 +120,14 @@ const Navbar = () => {
             onClick={toggleMenu}
           >
             Contact
+          </Link>
+          <Link 
+            to="/help" 
+            className="flex items-center text-realestate-gray hover:text-realestate-blue transition-colors"
+            onClick={toggleMenu}
+          >
+            <HelpCircle className="h-4 w-4 mr-2" />
+            Help
           </Link>
           
           {user ? (
